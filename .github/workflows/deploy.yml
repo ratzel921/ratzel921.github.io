@@ -2,7 +2,7 @@ name: Deploy to Github Pages
 on:
     push:
         branches:
-            - master
+            - deploy
 
 jobs:
     deploy:
@@ -21,7 +21,7 @@ jobs:
                 npm install
                 npm run build
             - name: Deploy
-              uses: master
+              uses: s0/git-publish-subdir-action@deploy
               env:
                 REPO: self
                 BRANCH: master
