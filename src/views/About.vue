@@ -13,10 +13,10 @@
 
       <v-responsive class="mx-auto title font-weight-light mb-8" max-width="720">
         <div>
-          Hey my name is Dominik Ratzel
+          Hey i am Dominik Ratzel
         </div>
         <div>
-          I am currently studying "Medieninformatik" at the "Hochschule der Medien" in Stuttgart Germany
+          Studying "Medieninformatik" at the "Hochschule der Medien" in Stuttgart Germany
         </div>
         <div>
           Since September 2020, I've been doing my internship at Novatec Consulting GmbH in Leinfelden-Echterdingen
