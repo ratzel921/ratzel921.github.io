@@ -19,7 +19,7 @@ export default {
   components: {Footer, TopNavBar},
   data() {
       return {
-
+        
       }
     },
 };
