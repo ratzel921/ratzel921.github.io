@@ -1,29 +1,29 @@
 <template>
-<div>
-    <section id="welcome">
-        <Welcome></Welcome>
-    </section>
+    <v-container>
+        <section id="welcome">
+            <Welcome></Welcome>
+        </section>
 
-    <section id="about-me">
-        <About></About>
-    </section>
+        <section id="about-me">
+            <About></About>
+        </section>
 
-    <section id="life" class="grey lighten-3">
-        <Life></Life>
-    </section>
+        <section id="life" class="grey lighten-3">
+            <Life></Life>
+        </section>
 
-    <section id="stats">
-      <Stats></Stats>
-    </section>
+        <section id="stats">
+        <Stats></Stats>
+        </section>
 
-    <section id="projects">
-        <Projects></Projects>
-    </section>
+        <section id="projects">
+            <Projects></Projects>
+        </section>
 
-    <v-sheet id="contact" dark tag="section" tile>
-        <Contact></Contact>
-    </v-sheet>
-</div>
+        <v-sheet id="contact" dark tag="section" tile>
+            <Contact></Contact>
+        </v-sheet>
+        </v-container>
 </template>
 
 <script>
@@ -45,3 +45,9 @@ export default {
     }
 }
 </script>
+
+
+<style lang="scss" scoped>
+
+
+</style>

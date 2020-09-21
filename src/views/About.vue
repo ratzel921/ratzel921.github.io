@@ -1,6 +1,28 @@
 <template>
-  <div>
-    <div class="py-12"></div>
+    <div class="container">
+      <v-row>
+        <v-col cols="6">
+            <v-row align-content="center" >
+              <v-col>
+                <v-avatar class="elevation-12 mb-6" size="256">
+                  <v-img src="@/assets/creator/dr079.jpeg"></v-img>
+                </v-avatar>
+              </v-col>
+
+            </v-row>
+            
+              Dominik Ratzel
+        </v-col>
+        <v-col cols="6">
+          c
+        </v-col>
+      </v-row>
+    </div>
+
+
+
+
+    <!-- <div class="py-12"></div>
 
     <v-container class="text-center">
       <h2 class="display-2 font-weight-bold mb-3">ABOUT ME</h2>
@@ -36,8 +58,7 @@
       </v-btn>
     </v-container>
 
-    <div class="py-12"></div>
-  </div>
+    <div class="py-12"></div> -->
 </template>
 
 <script>
@@ -50,3 +71,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.container {
+  align-items: center;
+}
+</style>

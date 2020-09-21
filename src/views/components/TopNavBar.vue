@@ -1,8 +1,9 @@
 <template>
   <v-app-bar app dark color="#292929" height="50">
     <v-btn text @click="$vuetify.goTo('#welcome')">
-      <v-icon>fas fa-home</v-icon>
+      Dominik Ratzel
     </v-btn>
+    <v-spacer></v-spacer>
     <v-btn text @click="$vuetify.goTo('#about-me')">
       About
     </v-btn>
