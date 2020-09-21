@@ -3,7 +3,7 @@
     <div class="py-12"></div>
 
     <v-container class="text-center">
-      <h2 class="display-2 font-weight-bold mb-3">My life</h2>
+      <h2 class="display-2 font-weight-bold mb-3">Skills</h2>
 
       <v-responsive class="mx-auto mb-12" width="56">
         <v-divider class="mb-1"></v-divider>
@@ -37,7 +37,7 @@
 
 <script>
 export default {
-  name: "Life",
+  name: "Skills",
   data() {
     return {
       skills: [

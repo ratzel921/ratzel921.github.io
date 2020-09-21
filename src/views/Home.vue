@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <div>
         <section id="welcome">
             <Welcome></Welcome>
         </section>
@@ -8,12 +8,12 @@
             <About></About>
         </section>
 
-        <section id="life" class="grey lighten-3">
-            <Life></Life>
+        <section id="skills" class="grey lighten-3">
+            <Skills></Skills>
         </section>
 
         <section id="stats">
-        <Stats></Stats>
+            <Stats></Stats>
         </section>
 
         <section id="projects">
@@ -23,19 +23,19 @@
         <v-sheet id="contact" dark tag="section" tile>
             <Contact></Contact>
         </v-sheet>
-        </v-container>
+    </div>
 </template>
 
 <script>
 import About from "@/views/About";
-import Life from "@/views/Life";
+import Skills from "@/views/Skills";
 import Stats from "@/views/Stats";
 import Projects from "@/views/Projects";
 import Contact from "@/views/Contact";
 import Welcome from "@/views/Welcome";
 export default {
   name: "Home",
-  components: {Welcome, Contact, Projects, Stats, Life, About},
+  components: {Welcome, Contact, Projects, Stats, Skills, About},
   data() {
         return {
 

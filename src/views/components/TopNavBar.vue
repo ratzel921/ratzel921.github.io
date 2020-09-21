@@ -7,8 +7,8 @@
     <v-btn text @click="$vuetify.goTo('#about-me')">
       About
     </v-btn>
-    <v-btn text @click="$vuetify.goTo('#life')">
-      Life
+    <v-btn text @click="$vuetify.goTo('#skills')">
+      Skills
     </v-btn>
     <v-btn text @click="$vuetify.goTo('#stats')">
       Stats
