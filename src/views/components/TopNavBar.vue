@@ -10,9 +10,6 @@
     <v-btn text @click="$vuetify.goTo('#skills')">
       Skills
     </v-btn>
-    <v-btn text @click="$vuetify.goTo('#stats')">
-      Stats
-    </v-btn>
     <v-btn text @click="$vuetify.goTo('#projects')">
       Projects
     </v-btn>

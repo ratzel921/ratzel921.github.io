@@ -12,10 +12,6 @@
             <Skills></Skills>
         </section>
 
-        <section id="stats">
-            <Stats></Stats>
-        </section>
-
         <section id="projects">
             <Projects></Projects>
         </section>
@@ -29,13 +25,12 @@
 <script>
 import About from "@/views/About";
 import Skills from "@/views/Skills";
-import Stats from "@/views/Stats";
 import Projects from "@/views/Projects";
 import Contact from "@/views/Contact";
 import Welcome from "@/views/Welcome";
 export default {
   name: "Home",
-  components: {Welcome, Contact, Projects, Stats, Skills, About},
+  components: {Welcome, Contact, Projects, Skills, About},
   data() {
         return {
 

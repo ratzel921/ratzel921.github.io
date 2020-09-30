@@ -44,7 +44,7 @@ export default {
         {
           icon: 'mdi-account-group-outline',
           title: 'HTML',
-          text: 'Website Development for Frontend and Hosted in Docker',
+          text: 'Website Development',
         },
         {
           icon: 'mdi-update',
