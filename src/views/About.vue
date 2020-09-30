@@ -42,7 +42,7 @@
                   </v-col>
 
                   <v-col cols="2">
-                    <v-btn icon text href="https://github.com/ratzel921/">
+                    <v-btn icon text href="https://gitlab.mi.hdm-stuttgart.de/dr079">
                       <i class="fa fa-gitlab"></i>
                     </v-btn>
                   </v-col>
