@@ -42,34 +42,44 @@ export default {
     return {
       skills: [
         {
-          icon: 'mdi-account-group-outline',
+          icon: 'fab fa-html5',
           title: 'HTML',
           text: 'Website Development',
         },
         {
-          icon: 'mdi-update',
+          icon: 'fab fa-css3-alt',
           title: 'CSS',
           text: 'Software Development for Backend Technologies like Spring Boot',
         },
         {
-          icon: 'mdi-shield-outline',
+          icon: 'fab fa-js-square',
           title: 'JavaScript',
           text: 'Deployment with Docker',
         },
         {
-          icon: 'mdi-account-group-outline',
+          icon: 'fab fa-vuejs',
           title: 'VueJs',
           text: 'Website Development for Frontend and Hosted in Docker',
         },
         {
-          icon: 'mdi-update',
+          icon: 'fab fa-java',
           title: 'Java',
           text: 'Software Development for Backend Technologies like Spring Boot',
         },
         {
-          icon: 'mdi-shield-outline',
+          icon: 'fab fa-docker',
           title: 'Docker',
           text: 'Deployment with Docker',
+        },
+        {
+          icon: 'fab fa-python',
+          title: 'Python',
+          text: 'Software Development with Python',
+        },
+        {
+          icon: 'fab fa-aws',
+          title: 'AWS',
+          text: 'Deployment with AWS',
         },
       ],
       jobs: [

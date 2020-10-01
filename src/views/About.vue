@@ -29,39 +29,9 @@
                 </v-row>
 
                 <v-row>
-                  <v-col cols="2">
-                    <v-btn icon text href="mailto:dominikratzel16@gmail.com">
-                      <v-icon>mdi-gmail</v-icon>
-                    </v-btn>
-                  </v-col>
-
-                  <v-col cols="2">
-                    <v-btn icon text href="https://github.com/ratzel921/">
-                      <i class="fa fa-github"></i>
-                    </v-btn>
-                  </v-col>
-
-                  <v-col cols="2">
-                    <v-btn icon text href="https://gitlab.mi.hdm-stuttgart.de/dr079">
-                      <i class="fa fa-gitlab"></i>
-                    </v-btn>
-                  </v-col>
-
-                  <v-col cols="2">
-                    <v-btn icon text href="https://de-de.facebook.com/dominik.ratzel">
-                      <v-icon>mdi-facebook</v-icon>
-                    </v-btn>
-                  </v-col>
-
-                  <v-col cols="2">
-                    <v-btn icon text href="https://www.instagram.com/ratzeldominik/">
-                      <v-icon>mdi-instagram</v-icon>
-                    </v-btn>
-                  </v-col>
-
-                  <v-col cols="2">
-                    <v-btn icon text href="https://de.linkedin.com/in/dominik-ratzel-19652a1a3">
-                      <v-icon>mdi-linkedin</v-icon>
+                  <v-col v-for="item in links" :key="item.name">
+                    <v-btn icon text :href="item.link">
+                      <v-icon>{{item.icon}}</v-icon>
                     </v-btn>
                   </v-col>
 
@@ -89,6 +59,38 @@ export default {
   name: 'About',
   data() {
     return {
+      links: [
+        {
+          name: 'Gmail',
+          icon: 'fa fa-envelope',
+          link: 'mailto:dominikratzel16@gmail.com'
+        },
+        {
+          name: 'Github',
+          icon: 'fa fa-github',
+          link: 'https://github.com/ratzel921/'
+        },
+        {
+          name: 'Gitlab',
+          icon: 'fa fa-gitlab',
+          link: 'https://gitlab.mi.hdm-stuttgart.de/dr079'
+        },
+        {
+          name: 'Facebook',
+          icon: 'fa fa-facebook',
+          link: 'https://de-de.facebook.com/dominik.ratzel'
+        },
+        {
+          name: 'Instagram',
+          icon: 'fa fa-instagram',
+          link: 'https://www.instagram.com/ratzeldominik/'
+        },
+        {
+          name: 'Linkedin',
+          icon: 'fa fa-linkedin',
+          link: 'https://de.linkedin.com/in/dominik-ratzel-19652a1a3'
+        },
+      ]
 
     }
   },
