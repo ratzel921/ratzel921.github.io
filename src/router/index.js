@@ -7,7 +7,22 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "about" */ '../views/Home.vue')
+    component: () => import('../views/Home.vue')
+  },
+  {
+    path: '/MiniSpielehalle',
+    name: 'Mini Spielehalle',
+    component: () => import('../projects/MiniSpielehalle.vue')
+  },
+  {
+    path: '/DataworkItSolutions',
+    name: 'Datawork It Solutions',
+    component: () => import('../projects/DataworkItSolutions.vue')
+  },
+  {
+    path: '/ParkingControlSystem',
+    name: 'Parking Control System',
+    component: () => import('../projects/ParkingControlSystem.vue')
   },
   // {
   //   path: '/projects',

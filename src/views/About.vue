@@ -1,11 +1,11 @@
 <template>
     <v-container>
       <v-row>
-        <v-col cols="4">
+        <v-col cols="12" sm="6">
           <v-row align="center" justify="center">
               <v-card flat>
                 <v-row align="center" justify="center">
-                  <v-avatar class="elevation-6 mb-6" size="256">
+                  <v-avatar class="elevation-6" size="256">
                     <v-img src="@/assets/creator/dr079.jpeg"></v-img>
                   </v-avatar>
                 </v-row>
@@ -39,7 +39,7 @@
               </v-card>
             </v-row>
         </v-col>
-        <v-col cols="8">
+        <v-col cols="12" sm="6">
           <v-row>  
             <v-card-title>Biography</v-card-title>
           </v-row>

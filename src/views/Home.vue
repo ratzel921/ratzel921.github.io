@@ -16,7 +16,7 @@
             <Projects></Projects>
         </section>
 
-        <v-sheet id="contact" dark tag="section" tile>
+        <v-sheet id="contact" class="grey lighten-3"  tag="section" tile>
             <Contact></Contact>
         </v-sheet>
     </div>
