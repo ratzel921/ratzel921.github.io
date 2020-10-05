@@ -106,6 +106,22 @@ export default {
                 { icon: 'fab fa-python'},
               ],
           },
+          {
+            //src: 'https://images.unsplash.com/photo-1475938476802-32a7e851dad1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+            src: 'https://images.unsplash.com/photo-1475938476802-32a7e851dad1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+            site: '/DeviceManagement',
+            title: 'Device Management',
+            shortDescription: 'As a working student at Fraunhofer i developed the Frontend.',
+            technologies: [
+                { icon: 'fab fa-html5'}, 
+                { icon: 'fab fa-css3-alt'}, 
+                { icon: 'fab fa-js-square'},
+                { icon: 'fab fa-vuejs'}, 
+                { icon: 'fab fa-java'}, 
+                { icon: 'fab fa-github'}, 
+                { icon: 'fab fa-docker'},
+            ],
+          },
       ],
     }
   }

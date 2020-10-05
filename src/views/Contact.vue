@@ -16,19 +16,51 @@
       <v-theme-provider light >
         <v-row>
           <v-col cols="12">
-            <v-text-field flat label="Name*" solo v-model="form.name"></v-text-field>
+            <ValidationProvider name="Name" rules="required|alpha|min:5|max:20" v-slot="{ errors }">
+              <v-text-field
+                        v-model="form.name"
+                        counter="20"
+                        required
+                        dense
+                        clearable
+                        :error-messages="errors[0]"
+                        label="Name*"
+                        solo
+              ></v-text-field>
+            </ValidationProvider>
           </v-col>
 
-          <v-col cols="12">
+          <!-- <v-col cols="12">
             <v-text-field flat label="Email*" solo v-model="form.email"></v-text-field>
+          </v-col> -->
+
+          <v-col cols="12">
+            <ValidationProvider name="Subject" rules="required|alpha|min:5|max:20" v-slot="{ errors }">
+              <v-text-field
+                        v-model="form.subject"
+                        counter="20"
+                        required
+                        dense
+                        clearable
+                        :error-messages="errors[0]"
+                        label="Subject*"
+                        solo
+              ></v-text-field>
+            </ValidationProvider>
           </v-col>
 
           <v-col cols="12">
-            <v-text-field flat label="Subject*" solo v-model="form.subject"></v-text-field>
-          </v-col>
-
-          <v-col cols="12">
-            <v-textarea flat label="Message*" solo v-model="form.message"></v-textarea>
+            <ValidationProvider name="Message" rules="required|min:5" v-slot="{ errors }">
+              <v-textarea
+                        v-model="form.message"
+                        required
+                        dense
+                        clearable
+                        :error-messages="errors[0]"
+                        label="Message*"
+                        solo
+              ></v-textarea>
+            </ValidationProvider>
           </v-col>
 
           <v-col class="mx-auto" cols="auto">

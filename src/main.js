@@ -12,6 +12,12 @@ Vue.use(emailjs)
 import{ init } from 'emailjs-com';
 init("user_VGQM4dJPV57Heymmcui95");
 
+import { ValidationProvider } from 'vee-validate/dist/vee-validate.full.esm';
+ 
+// Register it globally
+// main.js or any entry file.
+Vue.component('ValidationProvider', ValidationProvider);
+
 Vue.config.productionTip = false
 
 new Vue({
