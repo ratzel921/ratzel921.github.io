@@ -15,8 +15,8 @@
         <v-col v-for="(skill, i) in skills" :key="i" cols="6" sm="4" md="2">
             <v-theme-provider dark>
               <div>
-                <v-avatar color="primary" >
-                  <v-icon >{{skill.icon}}</v-icon>
+                <v-avatar height="100px" width="100px" color="white" >
+                  <v-img :src="require(`@/assets/${skill.src}`)" :alt="skill.title"/>
                 </v-avatar>
               </div>
             </v-theme-provider>
@@ -39,56 +39,56 @@ export default {
     return {
       skills: [
         {
-          icon: 'fab fa-html5',
           title: 'HTML',
+          src: 'icons/html.png'
         },
         {
-          icon: 'fab fa-css3-alt',
           title: 'CSS',
+          src: 'icons/css.png'
         },
         {
-          icon: 'fab fa-js-square',
           title: 'JavaScript',
+          src: 'icons/javascript.png'
         },
         {
-          icon: 'fab fa-vuejs',
           title: 'VueJs',
+          src: 'icons/vuejs.png'
         },
         {
-          icon: 'fab fa-java',
-          title: 'Java & Spring Boot',
+          title: 'Java',
+          src: 'icons/java.png'
         },
         {
-          icon: 'fab fa-docker',
+          title: 'Spring Boot',
+          src: 'icons/springBoot.png'
+        },
+        {
           title: 'Docker',
+          src: 'icons/docker.png'
         },
         {
-          icon: 'fab fa-python',
           title: 'Python',
+          src: 'icons/python.png'
         },
         {
-          icon: 'fab fa-aws',
           title: 'AWS',
+          src: 'icons/aws.png'
         },
         {
-          icon: 'fab fa-aws',
           title: 'Terraform',
+          src: 'icons/terraform.png'
         },
         {
-          icon: 'fab fa-aws',
           title: 'Keycloak',
+          src: 'icons/keycloak.jpg'
         },
         {
-          icon: 'fab fa-aws',
           title: 'Postgresql',
+          src: 'icons/postgresql.png'
         },
         {
-          icon: 'fab fa-aws',
-          title: 'MySql',
-        },
-        {
-          icon: 'fab fa-aws',
           title: 'MongoDB',
+          src: 'icons/mongoDB.png'
         },
       ],
       jobs: [
@@ -103,6 +103,11 @@ export default {
       ],
     }
   },
+  computed: {
+    getImage(path) {
+      return require(path)
+  	} 
+  }
 }
 </script>
 
