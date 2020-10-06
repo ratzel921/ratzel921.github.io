@@ -12,66 +12,67 @@
         <v-divider></v-divider>
       </v-responsive>
 
-      <form class="contact-form" @submit.prevent="sendEmail">
-      <v-theme-provider light >
-        <v-row>
-          <v-col cols="12">
-            <ValidationProvider name="Name" rules="required|alpha|min:5|max:20" v-slot="{ errors }">
-              <v-text-field
-                        v-model="form.name"
-                        counter="20"
-                        required
-                        dense
-                        clearable
-                        :error-messages="errors[0]"
-                        label="Name*"
-                        solo
-              ></v-text-field>
-            </ValidationProvider>
-          </v-col>
+      <ValidationObserver v-slot="{ invalid }">
+        <form @submit.prevent="onSubmit">
+          <v-theme-provider light>
+            <v-row>
+              <v-col cols="12">
+                <ValidationProvider immediate name="Name" rules="required|alpha|min:5|max:20" v-slot="{ errors }">
+                  <v-text-field
+                            v-model="form.name"
+                            counter="20"
+                            required
+                            dense
+                            clearable
+                            :error-messages="errors[0]"
+                            label="Name*"
+                            solo
+                  ></v-text-field>
+                </ValidationProvider>
+              </v-col>
 
-          <!-- <v-col cols="12">
-            <v-text-field flat label="Email*" solo v-model="form.email"></v-text-field>
-          </v-col> -->
+              <!-- <v-col cols="12">
+                <v-text-field flat label="Email*" solo v-model="form.email"></v-text-field>
+              </v-col> -->
 
-          <v-col cols="12">
-            <ValidationProvider name="Subject" rules="required|alpha|min:5|max:20" v-slot="{ errors }">
-              <v-text-field
-                        v-model="form.subject"
-                        counter="20"
-                        required
-                        dense
-                        clearable
-                        :error-messages="errors[0]"
-                        label="Subject*"
-                        solo
-              ></v-text-field>
-            </ValidationProvider>
-          </v-col>
+              <v-col cols="12">
+                <ValidationProvider immediate name="Subject" rules="required|alpha|min:5|max:20" v-slot="{ errors }">
+                  <v-text-field
+                            v-model="form.subject"
+                            counter="20"
+                            required
+                            dense
+                            clearable
+                            :error-messages="errors[0]"
+                            label="Subject*"
+                            solo
+                  ></v-text-field>
+                </ValidationProvider>
+              </v-col>
 
-          <v-col cols="12">
-            <ValidationProvider name="Message" rules="required|min:5" v-slot="{ errors }">
-              <v-textarea
-                        v-model="form.message"
-                        required
-                        dense
-                        clearable
-                        :error-messages="errors[0]"
-                        label="Message*"
-                        solo
-              ></v-textarea>
-            </ValidationProvider>
-          </v-col>
+              <v-col cols="12">
+                <ValidationProvider immediate name="Message" rules="required|min:5" v-slot="{ errors }">
+                  <v-textarea
+                            v-model="form.message"
+                            required
+                            dense
+                            clearable
+                            :error-messages="errors[0]"
+                            label="Message*"
+                            solo
+                  ></v-textarea>
+                </ValidationProvider>
+              </v-col>
 
-          <v-col class="mx-auto" cols="auto">
-            <v-btn color="accent" x-large :href="'mailto:' + sendToMail + '?subject=' + form.subject + '&body=' + form.message">
-              Submit
-            </v-btn>
-          </v-col>
-        </v-row>
-      </v-theme-provider>
-      </form>
-
+              <v-col class="mx-auto" cols="auto">
+                <v-btn :disabled="invalid" color="accent" x-large :href="'mailto:' + sendToMail + '?subject=' + form.subject + '&body=' + form.message">
+                  Submit
+                </v-btn>
+              </v-col>
+            </v-row>
+          </v-theme-provider>
+        </form>
+      </ValidationObserver>
 
 
     </v-container>
@@ -92,6 +93,8 @@ export default {
         message: '',
       },
 
+
+
       sendToMail: 'Dominikratzel16@gmail.com',
 
       serviceID: 'service_o0cr2xm',
@@ -103,7 +106,10 @@ export default {
   },
 
   methods: {
-}
+    onSubmit () {
+      alert('Form has been submitted!');
+    }
+  }
 }
 </script>
 
