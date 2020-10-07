@@ -17,7 +17,7 @@
           <v-theme-provider light>
             <v-row>
               <v-col cols="12">
-                <ValidationProvider immediate name="Name" rules="required|alpha|min:5|max:20" v-slot="{ errors }">
+                <ValidationProvider name="Name" rules="required|alpha|min:5|max:20" v-slot="{ errors }">
                   <v-text-field
                             v-model="form.name"
                             counter="20"
@@ -36,7 +36,7 @@
               </v-col> -->
 
               <v-col cols="12">
-                <ValidationProvider immediate name="Subject" rules="required|alpha|min:5|max:20" v-slot="{ errors }">
+                <ValidationProvider name="Subject" rules="required|alpha|min:5|max:20" v-slot="{ errors }">
                   <v-text-field
                             v-model="form.subject"
                             counter="20"
@@ -51,7 +51,7 @@
               </v-col>
 
               <v-col cols="12">
-                <ValidationProvider immediate name="Message" rules="required|min:5" v-slot="{ errors }">
+                <ValidationProvider name="Message" rules="required|min:5" v-slot="{ errors }">
                   <v-textarea
                             v-model="form.message"
                             required

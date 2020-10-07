@@ -36,7 +36,9 @@
           <v-row align="center" justify="center"> 
             <v-col cols="1" md="3" class="title font-weight-light mb-4" 
               v-for="(item, i) in project.technologies" :key="i">
-              <v-icon>{{item.icon}}</v-icon>
+              <v-img width="75%" height="75%" :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
+
+              <!-- <v-icon>{{item.icon}}</v-icon> -->
             </v-col>
           </v-row>
 
@@ -69,13 +71,39 @@ export default {
             shortDescription: 'A Web application for an online casino with user administration.',
             technologies: 
               [
-                { icon: 'fab fa-html5'}, 
-                { icon: 'fab fa-css3-alt'}, 
-                { icon: 'fab fa-js-square'},
-                { icon: 'fab fa-vuejs'}, 
-                { icon: 'fab fa-java'}, 
-                { icon: 'fab fa-gitlab'}, 
-                { icon: 'fab fa-docker'},
+                {
+                  title: 'HTML',
+                  src: 'icons/html.png'
+                },
+                {
+                  title: 'CSS',
+                  src: 'icons/css.png'
+                },
+                {
+                  title: 'JavaScript',
+                  src: 'icons/javascript.png'
+                },
+                {
+                  title: 'VueJs',
+                  src: 'icons/vuejs.png'
+                },
+                {
+                  title: 'Java',
+                  src: 'icons/java.png'
+                },
+                {
+                  title: 'Spring Boot',
+                  src: 'icons/springBoot.png'
+                },
+                {
+                  title: 'Docker',
+                  src: 'icons/docker.png'
+                },
+                {
+                  title: 'Gitlab',
+                  src: 'icons/gitlab.png'
+                },
+                
               ],
           },
           {
@@ -84,15 +112,42 @@ export default {
             site: '/DataworkItSolutions',
             title: 'Datawork It Solutions',
             shortDescription: 'My startup which I develop together with 3 other people.',
-            technologies: [
-                { icon: 'fab fa-html5'}, 
-                { icon: 'fab fa-css3-alt'}, 
-                { icon: 'fab fa-js-square'},
-                { icon: 'fab fa-vuejs'}, 
-                { icon: 'fab fa-java'}, 
-                { icon: 'fab fa-github'}, 
-                { icon: 'fab fa-docker'},
-            ],
+            technologies: 
+              [
+                {
+                  title: 'HTML',
+                  src: 'icons/html.png'
+                },
+                {
+                  title: 'CSS',
+                  src: 'icons/css.png'
+                },
+                {
+                  title: 'JavaScript',
+                  src: 'icons/javascript.png'
+                },
+                {
+                  title: 'VueJs',
+                  src: 'icons/vuejs.png'
+                },
+                {
+                  title: 'Java',
+                  src: 'icons/java.png'
+                },
+                {
+                  title: 'Spring Boot',
+                  src: 'icons/springBoot.png'
+                },
+                {
+                  title: 'Docker',
+                  src: 'icons/docker.png'
+                },
+                {
+                  title: 'Gitlab',
+                  src: 'icons/gitlab.png'
+                },
+                
+              ],
           },
           {
             //src: 'https://images.unsplash.com/photo-1416339442236-8ceb164046f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1892&q=80',
@@ -102,8 +157,26 @@ export default {
             shortDescription: 'IoT and Cloud Services project for a parking guidance system.',
             technologies: 
               [
-                { icon: 'fab fa-aws'},  
-                { icon: 'fab fa-python'},
+                {
+                  title: 'Docker',
+                  src: 'icons/docker.png'
+                },
+                {
+                  title: 'Gitlab',
+                  src: 'icons/gitlab.png'
+                },
+                {
+                  title: 'AWS',
+                  src: 'icons/aws.png'
+                },
+                {
+                  title: 'Terraform',
+                  src: 'icons/terraform.png'
+                },
+                {
+                  title: 'Python',
+                  src: 'icons/python.png'
+                },
               ],
           },
           {
@@ -113,17 +186,51 @@ export default {
             title: 'Device Management',
             shortDescription: 'As a working student at Fraunhofer i developed the Frontend.',
             technologies: [
-                { icon: 'fab fa-html5'}, 
-                { icon: 'fab fa-css3-alt'}, 
-                { icon: 'fab fa-js-square'},
-                { icon: 'fab fa-vuejs'}, 
-                { icon: 'fab fa-java'}, 
-                { icon: 'fab fa-github'}, 
-                { icon: 'fab fa-docker'},
+                {
+                  title: 'HTML',
+                  src: 'icons/html.png'
+                },
+                {
+                  title: 'CSS',
+                  src: 'icons/css.png'
+                },
+                {
+                  title: 'JavaScript',
+                  src: 'icons/javascript.png'
+                },
+                {
+                  title: 'VueJs',
+                  src: 'icons/vuejs.png'
+                },
+                {
+                  title: 'Java',
+                  src: 'icons/java.png'
+                },
+                {
+                  title: 'Spring Boot',
+                  src: 'icons/springBoot.png'
+                },
+                {
+                  title: 'Docker',
+                  src: 'icons/docker.png'
+                },
+                {
+                  title: 'Gitlab',
+                  src: 'icons/gitlab.png'
+                },
+                {
+                  title: 'Keycloak',
+                  src: 'icons/keycloak.jpg'
+                },
             ],
           },
       ],
     }
+  },
+  computed: {
+    getImage(path) {
+      return require(path)
+  	} 
   }
 }
 </script>

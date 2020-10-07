@@ -1,7 +1,7 @@
 <template>
     <v-container>
-      <v-row>
-        <v-col cols="12" sm="6">
+      <v-row align="center" justify="center">
+        <v-col cols="12">
           <v-row align="center" justify="center">
               <v-card flat>
                 <v-row align="center" justify="center">
@@ -39,15 +39,7 @@
               </v-card>
             </v-row>
         </v-col>
-        <v-col cols="12" sm="6">
-          <v-row>  
-            <v-card-title>Biography</v-card-title>
-          </v-row>
-          <v-row>
-            <p></p>
-          </v-row>
-                
-        </v-col>
+        
 
       </v-row>
     </v-container>
