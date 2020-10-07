@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6146ed95408bf7ae57f7",
+    "revision": "6727c3598578d56931e3",
     "url": "/css/app.5928cc71.css"
+  },
+  {
+    "revision": "7a37c8f0744624c40658",
+    "url": "/css/chunk-4387e1ed.7cc2b8d3.css"
   },
   {
     "revision": "239c342a07eb004a3e73",
     "url": "/css/chunk-5cc86dba.85e964b6.css"
   },
   {
-    "revision": "335a0cea0467fa261c3e",
-    "url": "/css/chunk-c6698262.986f944d.css"
-  },
-  {
-    "revision": "8a6736396208af10f7d6",
-    "url": "/css/chunk-vendors.e8005172.css"
+    "revision": "d47f28ad2b4936720c4a",
+    "url": "/css/chunk-vendors.33820e8e.css"
   },
   {
     "revision": "2a61b00fcc9b1afbf99be145777b1b72",
@@ -240,12 +240,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/postgresql.67dccee7.png"
   },
   {
-    "revision": "4c7724e2e3cec03d4ee3449c21cf9a70",
+    "revision": "495359d092bdf9f04dc7b29d7bbd3d6d",
     "url": "/index.html"
   },
   {
-    "revision": "6146ed95408bf7ae57f7",
-    "url": "/js/app.88e85bb6.js"
+    "revision": "6727c3598578d56931e3",
+    "url": "/js/app.b23d9b2b.js"
   },
   {
     "revision": "359195657d54903a10b6",
@@ -260,16 +260,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-2d222386.84ac2d0a.js"
   },
   {
+    "revision": "7a37c8f0744624c40658",
+    "url": "/js/chunk-4387e1ed.53244b90.js"
+  },
+  {
     "revision": "239c342a07eb004a3e73",
     "url": "/js/chunk-5cc86dba.ec0e9e28.js"
   },
   {
-    "revision": "335a0cea0467fa261c3e",
-    "url": "/js/chunk-c6698262.c7f39fc8.js"
-  },
-  {
-    "revision": "8a6736396208af10f7d6",
-    "url": "/js/chunk-vendors.86518754.js"
+    "revision": "d47f28ad2b4936720c4a",
+    "url": "/js/chunk-vendors.f9ed7b55.js"
   },
   {
     "revision": "23d949fa419afd3025b16011588b5a38",
