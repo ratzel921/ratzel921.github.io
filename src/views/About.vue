@@ -6,7 +6,7 @@
               <v-card flat color="grey lighten-3">
                 <v-row align="center" justify="center">
                   <v-avatar class="elevation-6" size="256">
-                    <v-img src="@/assets/creator/dr079.jpeg"></v-img>
+                    <v-img src="@/assets/creator/dominik.jpeg"></v-img>
                   </v-avatar>
                 </v-row>
                 

@@ -12,7 +12,7 @@
       </v-responsive>
 
       <v-row justify="center">
-        <v-col v-for="(skill, i) in skills" :key="i" cols="6" sm="4" md="2">
+        <v-col v-for="(skill, i) in skills" :key="i" cols="12" sm="4" md="2" lg="1">
             <v-avatar>
               <v-img height="50" width="50" :src="require(`@/assets/${skill.src}`)" :alt="skill.title"/>
             </v-avatar>
