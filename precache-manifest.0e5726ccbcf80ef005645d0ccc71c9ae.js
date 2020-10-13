@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6727c3598578d56931e3",
+    "revision": "5ac725eae64a7105ff3e",
     "url": "/css/app.5928cc71.css"
   },
   {
-    "revision": "7a37c8f0744624c40658",
-    "url": "/css/chunk-4387e1ed.7cc2b8d3.css"
+    "revision": "755cc2e504383515fa3b",
+    "url": "/css/chunk-29306719.ea96b7b2.css"
   },
   {
     "revision": "239c342a07eb004a3e73",
     "url": "/css/chunk-5cc86dba.85e964b6.css"
   },
   {
-    "revision": "d47f28ad2b4936720c4a",
-    "url": "/css/chunk-vendors.33820e8e.css"
+    "revision": "82995c177c4d0a49e067",
+    "url": "/css/chunk-vendors.750beebb.css"
   },
   {
     "revision": "2a61b00fcc9b1afbf99be145777b1b72",
@@ -208,6 +208,30 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fonts/materialdesignicons-webfont.f1997a8a.woff2"
   },
   {
+    "revision": "1adc52e62a7305e94667a46023c6a947",
+    "url": "/img/admin.1adc52e6.png"
+  },
+  {
+    "revision": "ffb2c730059fbb88356e8379c2c4524f",
+    "url": "/img/aws-configure.ffb2c730.png"
+  },
+  {
+    "revision": "690ab740800ae306846ae6c912efb7b3",
+    "url": "/img/aws.690ab740.jpeg"
+  },
+  {
+    "revision": "b70aa27301e04ffe3972f8cf5a559a95",
+    "url": "/img/boughtCard.b70aa273.png"
+  },
+  {
+    "revision": "f9273e8244f3a71598d0c3215efb8295",
+    "url": "/img/browser-counter.f9273e82.png"
+  },
+  {
+    "revision": "d678b6fe34e5a51215339bc74d6a18a3",
+    "url": "/img/connect-devices.d678b6fe.png"
+  },
+  {
     "revision": "39e4a9aa3e1a9e44a4f4c70e86188858",
     "url": "/img/dr079.39e4a9aa.jpeg"
   },
@@ -224,32 +248,212 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/fa-solid-900.03ba7cb7.svg"
   },
   {
+    "revision": "f986bb098f334367ff63e8c4a1d8bdd1",
+    "url": "/img/filtered.f986bb09.png"
+  },
+  {
     "revision": "912ec66d7572ff821749319396470bde",
     "url": "/img/fontawesome-webfont.912ec66d.svg"
+  },
+  {
+    "revision": "9e458a07004e470de1e8ae4b4fd4615e",
+    "url": "/img/git-clone-vm.9e458a07.png"
+  },
+  {
+    "revision": "4a12e1f6a8aaad474959cef0d601d45d",
+    "url": "/img/gridView.4a12e1f6.png"
+  },
+  {
+    "revision": "f25ba0d5421af3b73fffaf1eb48880f6",
+    "url": "/img/headsOrTails.f25ba0d5.png"
+  },
+  {
+    "revision": "c6fdf98a4cf1fab39743c671f1f2dc58",
+    "url": "/img/home.c6fdf98a.png"
+  },
+  {
+    "revision": "ed8cac0d5344058dd1c3a38dbbba48d1",
+    "url": "/img/home.ed8cac0d.png"
+  },
+  {
+    "revision": "88db29b704d218c04ab52ddd37c274f2",
+    "url": "/img/hyper-v-enabled.88db29b7.png"
+  },
+  {
+    "revision": "5a9c0cc4a0da1cc916975938e7e14a17",
+    "url": "/img/iot-apply.5a9c0cc4.png"
+  },
+  {
+    "revision": "83f19f2f518932746e189bc42d8253a4",
+    "url": "/img/iot-destroy.83f19f2f.png"
+  },
+  {
+    "revision": "ac3e430e27365f00440a903af07845b3",
+    "url": "/img/iot-init.ac3e430e.png"
   },
   {
     "revision": "49016c17151d2940eefcc1c827c136f3",
     "url": "/img/java.49016c17.png"
   },
   {
+    "revision": "91b98bfa64703c15ef5e5eea2f614e67",
+    "url": "/img/jest.91b98bfa.jpg"
+  },
+  {
+    "revision": "6f552808919216c7ee614fba45ecf3fd",
+    "url": "/img/lightMode.6f552808.png"
+  },
+  {
+    "revision": "65278a6455d54a800a21b6ad1ae6a910",
+    "url": "/img/listView.65278a64.png"
+  },
+  {
+    "revision": "68741be9d6c6a51a47f7adf41b92a65c",
+    "url": "/img/local-clone-project.68741be9.png"
+  },
+  {
+    "revision": "4a80bb85576dcb6fe6fa85d70f014f6a",
+    "url": "/img/modify-parkhouses.4a80bb85.png"
+  },
+  {
     "revision": "36421632be9b764dffb833bde95460a3",
     "url": "/img/mongoDB.36421632.png"
+  },
+  {
+    "revision": "0e390f89ac008aacab6cb25a592a7c79",
+    "url": "/img/moon1.0e390f89.png"
+  },
+  {
+    "revision": "fdc08a3f35e71e4839bf3fcbee7b8c6a",
+    "url": "/img/moon2.fdc08a3f.png"
+  },
+  {
+    "revision": "62abb98c81601f927e30c08e364f4fb3",
+    "url": "/img/moon3.62abb98c.png"
+  },
+  {
+    "revision": "5895a24b75463b46e25dffeba563f7bf",
+    "url": "/img/moon4.5895a24b.png"
+  },
+  {
+    "revision": "c5e994b940321cdf6893b0c17f797592",
+    "url": "/img/newService1.c5e994b9.png"
+  },
+  {
+    "revision": "0a1b4b50fc0565f971bcecf422581db5",
+    "url": "/img/newService2.0a1b4b50.png"
+  },
+  {
+    "revision": "e25dd93f25abfcfd8bca86fd3c983424",
+    "url": "/img/newService3.e25dd93f.png"
+  },
+  {
+    "revision": "fa8129eb599f175c8b99621a6c857e03",
+    "url": "/img/newService4.fa8129eb.png"
+  },
+  {
+    "revision": "9da2e33036021d3e0aae6505c8f67e59",
+    "url": "/img/newService5.9da2e330.png"
+  },
+  {
+    "revision": "1d909e5900a664255546b94e90c8e02a",
+    "url": "/img/newService6.1d909e59.png"
+  },
+  {
+    "revision": "e7d2f420ecf8ecfbc79de047ecac0bac",
+    "url": "/img/orderView.e7d2f420.png"
+  },
+  {
+    "revision": "d92d8325b3b584b208b61cd916244fd1",
+    "url": "/img/orderView2.d92d8325.png"
+  },
+  {
+    "revision": "79ee9b56f02298ddf040be4f7e2e6a02",
+    "url": "/img/passwordChange.79ee9b56.png"
   },
   {
     "revision": "67dccee7e4eb7c4a1e9aea56dcd347fe",
     "url": "/img/postgresql.67dccee7.png"
   },
   {
-    "revision": "495359d092bdf9f04dc7b29d7bbd3d6d",
+    "revision": "fd595d797431ae960c1a7c6eef19ace9",
+    "url": "/img/productView.fd595d79.png"
+  },
+  {
+    "revision": "51327fb33105217017dff30522356e92",
+    "url": "/img/profile.51327fb3.png"
+  },
+  {
+    "revision": "079385a58f55ad97c0ae16632ddc2df4",
+    "url": "/img/register.079385a5.png"
+  },
+  {
+    "revision": "7e570797ba08ab60badef3f84ca3b68e",
+    "url": "/img/register1.7e570797.png"
+  },
+  {
+    "revision": "82be4fd779d812f1033d669d33ac579c",
+    "url": "/img/register2.82be4fd7.png"
+  },
+  {
+    "revision": "cfc908f485d1fdb23cd9ba985c1b52c7",
+    "url": "/img/roulette.cfc908f4.png"
+  },
+  {
+    "revision": "e15e9b10319b2a9217ec8596e71d599d",
+    "url": "/img/serviceOverview.e15e9b10.png"
+  },
+  {
+    "revision": "a9a95f9fc0566f831f6222f1a10b1641",
+    "url": "/img/shoppingCard.a9a95f9f.png"
+  },
+  {
+    "revision": "35e6b5f6ea7c3c65db79c38b97ef5195",
+    "url": "/img/slotMachine.35e6b5f6.png"
+  },
+  {
+    "revision": "8467bd9f58102c1f1afd8446d96d6a9d",
+    "url": "/img/ssh-code.8467bd9f.png"
+  },
+  {
+    "revision": "b7495618d6fdabdbc83a11b969f1d83e",
+    "url": "/img/ssh-manually.b7495618.png"
+  },
+  {
+    "revision": "c8b724f20a5c4dd1c7d14421aff693bd",
+    "url": "/img/vagrant-destroy.c8b724f2.png"
+  },
+  {
+    "revision": "d7c2b49389a972d8fd5d0d8bb55e2282",
+    "url": "/img/vagrant-ssh.d7c2b493.png"
+  },
+  {
+    "revision": "afde958c7b7ff8a42d50e5c49367c111",
+    "url": "/img/vagrant-up.afde958c.png"
+  },
+  {
+    "revision": "a5aa57c5749078c704accd04d8309773",
     "url": "/index.html"
   },
   {
-    "revision": "6727c3598578d56931e3",
-    "url": "/js/app.b23d9b2b.js"
+    "revision": "5ac725eae64a7105ff3e",
+    "url": "/js/app.c3a6c667.js"
+  },
+  {
+    "revision": "755cc2e504383515fa3b",
+    "url": "/js/chunk-29306719.3afc7417.js"
+  },
+  {
+    "revision": "ccacea1b5f49b2183286",
+    "url": "/js/chunk-2d0c8485.5c2640e5.js"
   },
   {
     "revision": "359195657d54903a10b6",
     "url": "/js/chunk-2d0cf8c7.5b433057.js"
+  },
+  {
+    "revision": "017331ad9f7dc3830390",
+    "url": "/js/chunk-2d20f30b.f0cef2c6.js"
   },
   {
     "revision": "1adc5055af6641227dc8",
@@ -260,16 +464,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-2d222386.84ac2d0a.js"
   },
   {
-    "revision": "7a37c8f0744624c40658",
-    "url": "/js/chunk-4387e1ed.53244b90.js"
-  },
-  {
     "revision": "239c342a07eb004a3e73",
     "url": "/js/chunk-5cc86dba.ec0e9e28.js"
   },
   {
-    "revision": "d47f28ad2b4936720c4a",
-    "url": "/js/chunk-vendors.f9ed7b55.js"
+    "revision": "82995c177c4d0a49e067",
+    "url": "/js/chunk-vendors.72078605.js"
   },
   {
     "revision": "23d949fa419afd3025b16011588b5a38",
