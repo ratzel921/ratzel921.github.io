@@ -90,6 +90,14 @@ export default {
           title: 'MongoDB',
           src: 'icons/mongoDB.png'
         },
+        {
+          title: 'Vagrant',
+          src: 'icons/vagrant.png'
+        },
+        {
+          title: 'Jest',
+          src: 'icons/jest.jpg'
+        },
       ],
       jobs: [
         {

@@ -24,6 +24,16 @@ const routes = [
     name: 'Parking Control System',
     component: () => import('../projects/ParkingControlSystem.vue')
   },
+  {
+    path: '/Webshop',
+    name: 'Webshop',
+    component: () => import('../projects/Webshop.vue')
+  },
+  {
+    path: '/DeviceManagement',
+    name: 'DeviceManagement',
+    component: () => import('../projects/DeviceManagement.vue')
+  },
   // {
   //   path: '/projects',
   //   name: 'Projects',
