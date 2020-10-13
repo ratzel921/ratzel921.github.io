@@ -11,15 +11,11 @@
         <v-divider></v-divider>
       </v-responsive>
 
-      <v-row>
+      <v-row justify="center">
         <v-col v-for="(skill, i) in skills" :key="i" cols="6" sm="4" md="2">
-            <v-theme-provider dark>
-              <div>
-                <v-avatar height="100px" width="100px" color="white" >
-                  <v-img :src="require(`@/assets/${skill.src}`)" :alt="skill.title"/>
-                </v-avatar>
-              </div>
-            </v-theme-provider>
+            <v-avatar>
+              <v-img height="50" width="50" :src="require(`@/assets/${skill.src}`)" :alt="skill.title"/>
+            </v-avatar>
 
             <div class="justify-center text-uppercase">
               {{skill.title}}

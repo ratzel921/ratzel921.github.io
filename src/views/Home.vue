@@ -4,15 +4,15 @@
             <Welcome></Welcome>
         </section>
 
-        <section id="about-me">
+        <section id="about-me"  class="grey lighten-3">
             <About></About>
         </section>
 
-        <section id="skills" class="grey lighten-3">
+        <section id="skills">
             <Skills></Skills>
         </section>
 
-        <section id="projects">
+        <section id="projects" >
             <Projects></Projects>
         </section>
 

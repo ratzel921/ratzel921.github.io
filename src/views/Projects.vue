@@ -28,7 +28,7 @@
           </v-row>
 
           <v-row class="text-center" align="center" justify="center">
-            <v-carousel cycle :show-arrows-on-hover="true"  height="400">
+            <v-carousel :show-arrows-on-hover="true" hide-delimiter-background hide-delimiters  height="400">
               <v-carousel-item
                 v-for="(item,i) in project.screenshots"
                 :key="i"
@@ -39,10 +39,13 @@
           </v-row>
 
 
-          <v-row align="center" justify="center"> 
+          <v-row align="center" justify="center" class="white"> 
             <v-col cols="3" md="2" class="title font-weight-light mb-4" 
               v-for="(item, i) in project.technologies" :key="i">
-              <v-img width="50" height="50" :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
+              <v-avatar>
+                  <v-img height="50" width="50" :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
+                </v-avatar>
+              <!-- <v-img width="50" height="50" :src="require(`@/assets/${item.src}`)" :alt="item.title"/> -->
 
               <!-- <v-icon>{{item.icon}}</v-icon> -->
             </v-col>
