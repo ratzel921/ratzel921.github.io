@@ -29,12 +29,12 @@
           </v-row>
 
           <v-row class="text-center" align="center" justify="center">
-            <v-carousel :show-arrows-on-hover="true" hide-delimiter-background hide-delimiters height="100%">
+            <v-carousel :show-arrows-on-hover="true" hide-delimiter-background hide-delimiters :height="Height">
               <v-carousel-item
                 v-for="(item,i) in project.screenshots"
                 :key="i"
               >
-              <v-img  :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
+              <v-img :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
               </v-carousel-item>
             </v-carousel>
           </v-row>
@@ -356,7 +356,14 @@ export default {
   computed: {
     getImage(path) {
       return require(path)
-  	} 
+  	},
+    Height() {
+      if(this.$vuetify.breakpoint.name === 'xs') {
+        return '100%'
+      } else {
+        return '450'
+      }
+    } 
   }
 }
 </script>
