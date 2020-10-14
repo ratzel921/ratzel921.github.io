@@ -51,6 +51,10 @@ export default {
           src: 'icons/vuejs.png'
         },
         {
+          title: 'Jest',
+          src: 'icons/jest.jpg'
+        },
+        {
           title: 'Java',
           src: 'icons/java.png'
         },
@@ -61,6 +65,14 @@ export default {
         {
           title: 'Docker',
           src: 'icons/docker.png'
+        },
+        {
+          title: 'Keycloak',
+          src: 'icons/keycloak.jpg'
+        },
+        {
+          title: 'C++',
+          src: 'icons/C++.png'
         },
         {
           title: 'Python',
@@ -75,8 +87,8 @@ export default {
           src: 'icons/terraform.png'
         },
         {
-          title: 'Keycloak',
-          src: 'icons/keycloak.jpg'
+          title: 'Vagrant',
+          src: 'icons/vagrant.png'
         },
         {
           title: 'Postgresql',
@@ -85,14 +97,6 @@ export default {
         {
           title: 'MongoDB',
           src: 'icons/mongoDB.png'
-        },
-        {
-          title: 'Vagrant',
-          src: 'icons/vagrant.png'
-        },
-        {
-          title: 'Jest',
-          src: 'icons/jest.jpg'
         },
       ],
       jobs: [
