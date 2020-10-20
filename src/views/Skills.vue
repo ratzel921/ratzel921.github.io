@@ -30,8 +30,6 @@
 
 <script>
 export default {
-    <<
-    << << < HEAD
     name: "Skills",
     data() {
         return {
