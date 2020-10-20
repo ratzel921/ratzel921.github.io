@@ -1,10 +1,10 @@
 <template>
   <v-app-bar app dark color="#292929" height="50">
-    <v-btn text to="/" @click="$vuetify.goTo('#welcome')">
+    <v-btn class="mx-auto" text to="/" @click="$vuetify.goTo('#welcome')">
       Dominik Ratzel
     </v-btn>
-    <v-spacer></v-spacer>
-    <div v-if="$route.path === '/'">
+    <div class="mx-auto" v-if="$route.path === '/' && $vuetify.breakpoint.name !== 'xs'">
+      <v-spacer></v-spacer>
       <v-btn text @click="$vuetify.goTo('#about-me')">
         About
       </v-btn>

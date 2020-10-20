@@ -11,14 +11,15 @@
         <v-divider></v-divider>
       </v-responsive>
 
-      <v-row justify="center">
-        <v-col class="px-4" v-for="(project, i) in projects" 
-          :key="i" cols="12" md="6">
+      <v-row justify="center" >
+        <v-col cols="12" xl="6" class="px-4 py-10 border-top" v-for="(project, i) in projects" 
+          :key="i" >
 
-          <v-row align="center" justify="center"> 
-            <h3 class="font-weight-black mt-4 text-uppercase">
+          <v-card flat >
+            <v-row align="center" justify="center"> 
+            <v-card-title class="font-weight-black mt-4 text-uppercase text-decoration-underline">
               {{project.title}}
-            </h3>
+            </v-card-title>
           </v-row>
 
           <v-row align="center" justify="center"> 
@@ -28,12 +29,12 @@
           </v-row>
 
           <v-row class="text-center" align="center" justify="center">
-            <v-carousel :show-arrows-on-hover="true" hide-delimiter-background hide-delimiters  height="400">
+            <v-carousel :show-arrows-on-hover="true" hide-delimiter-background hide-delimiters :height="Height">
               <v-carousel-item
                 v-for="(item,i) in project.screenshots"
                 :key="i"
               >
-              <v-img height="400" max-width="100%"  :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
+              <v-img :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
               </v-carousel-item>
             </v-carousel>
           </v-row>
@@ -42,20 +43,20 @@
           <v-row align="center" justify="center" class="white"> 
             <v-col cols="3" md="2" class="title font-weight-light mb-4" 
               v-for="(item, i) in project.technologies" :key="i">
-              <v-avatar>
                   <v-img height="50" width="50" :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
-                </v-avatar>
               <!-- <v-img width="50" height="50" :src="require(`@/assets/${item.src}`)" :alt="item.title"/> -->
 
               <!-- <v-icon>{{item.icon}}</v-icon> -->
             </v-col>
           </v-row>
 
-          <v-row class="grey white--text" align="center" justify="center">
+          <v-row class="grey white--text" justify="center">
             <v-btn class="ml-n4 my-2" color="white" text :to="project.site">
               Continue Reading
             </v-btn>
           </v-row>
+          </v-card>
+
 
         </v-col>
       </v-row>
@@ -355,11 +356,22 @@ export default {
   computed: {
     getImage(path) {
       return require(path)
-  	} 
+  	},
+    Height() {
+      if(this.$vuetify.breakpoint.name === 'xs') {
+        return '100%'
+      } else {
+        return '450'
+      }
+    } 
   }
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+
+.border-top {
+  border-top: solid;
+}
 
 </style>
