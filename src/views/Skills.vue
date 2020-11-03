@@ -98,6 +98,10 @@ export default {
           title: 'MongoDB',
           src: 'icons/mongoDB.png'
         },
+        {
+          title: 'Figma',
+          src: 'icons/figma.png'
+        },
       ],
       jobs: [
         {
