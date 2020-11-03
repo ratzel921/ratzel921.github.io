@@ -1,31 +1,31 @@
 <template>
-  <div>
+<div>
     <div class="py-12"></div>
 
     <v-container class="text-center">
-      <h2 class="display-2 font-weight-bold mb-3">Skills</h2>
+        <h2 class="display-2 font-weight-bold mb-3">Skills</h2>
 
-      <v-responsive class="mx-auto mb-12" width="56">
-        <v-divider class="mb-1"></v-divider>
+        <v-responsive class="mx-auto mb-12" width="56">
+            <v-divider class="mb-1"></v-divider>
 
-        <v-divider></v-divider>
-      </v-responsive>
+            <v-divider></v-divider>
+        </v-responsive>
 
-      <v-row justify="center">
-        <v-col v-for="(skill, i) in skills" :key="i" cols="12" sm="4" md="2" lg="1">
-            <v-avatar>
-              <v-img height="50" width="50" :src="require(`@/assets/${skill.src}`)" :alt="skill.title"/>
-            </v-avatar>
+        <v-row justify="center">
+            <v-col v-for="(skill, i) in skills" :key="i" cols="6" sm="4" md="2">
+                <v-avatar>
+                    <v-img height="50" width="50" :src="require(`@/assets/${skill.src}`)" :alt="skill.title" />
+                </v-avatar>
 
-            <div class="justify-center text-uppercase">
-              {{skill.title}}
-            </div>
-        </v-col>
-      </v-row>
+                <div class="justify-center text-uppercase">
+                    {{skill.title}}
+                </div>
+            </v-col>
+        </v-row>
     </v-container>
 
     <div class="py-12"></div>
-  </div>
+</div>
 </template>
 
 <script>
@@ -79,6 +79,10 @@ export default {
           src: 'icons/python.png'
         },
         {
+          title: 'Linux',
+          src: 'icons/linux.png'
+        },
+        {
           title: 'AWS',
           src: 'icons/aws.png'
         },
@@ -111,15 +115,15 @@ export default {
           begin: '',
           end: '',
           workDescription: '',
+
+            }],
         }
-      ],
+    },
+    computed: {
+        getImage(path) {
+            return require(path)
+        }
     }
-  },
-  computed: {
-    getImage(path) {
-      return require(path)
-  	} 
-  }
 }
 </script>
 
