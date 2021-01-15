@@ -15,9 +15,9 @@ const routes = [
     component: () => import('../projects/MiniSpielehalle.vue')
   },
   {
-    path: '/DataworkItSolutions',
-    name: 'Datawork It Solutions',
-    component: () => import('../projects/DataworkItSolutions.vue')
+    path: '/HyphenTechnologies',
+    name: 'Hyphen Technologies',
+    component: () => import('../projects/HyphenTechnologies.vue')
   },
   {
     path: '/ParkingControlSystem',
