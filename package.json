@@ -10,12 +10,16 @@
     "copy": "cp dist/ ../ratzel921.github.io/"
   },
   "dependencies": {
+    "@tanker/client-browser": "^2.6.1",
+    "@tanker/fake-authentication": "^2.6.1",
     "core-js": "^3.6.5",
     "emailjs-com": "^2.6.3",
+    "i18n": "^0.13.2",
     "register-service-worker": "^1.7.1",
     "roboto-fontface": "*",
     "vee-validate": "^3.4.0",
     "vue": "^2.6.11",
+    "vue-i18n": "^8.22.4",
     "vue-router": "^3.2.0",
     "vuetify": "^2.2.11",
     "vuex": "^3.4.0"

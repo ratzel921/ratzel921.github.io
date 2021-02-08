@@ -4,8 +4,15 @@
             <Welcome></Welcome>
         </section>
 
+        <section id="timeline"  class="grey lighten-3">
+        </section>
+
+        <section id="liveLine" class="grey lighten-3">
+          <LiveLine></LiveLine>
+        </section>
+
         <section id="about-me"  class="grey lighten-3">
-            <About></About>
+          <About></About>
         </section>
 
         <section id="skills">
@@ -28,9 +35,10 @@ import Skills from "@/views/Skills";
 import Projects from "@/views/Projects";
 import Contact from "@/views/Contact";
 import Welcome from "@/views/Welcome";
+import LiveLine from "@/views/LiveLine";
 export default {
   name: "Home",
-  components: {Welcome, Contact, Projects, Skills, About},
+  components: {LiveLine, Welcome, Contact, Projects, Skills, About},
   data() {
         return {
 

@@ -6,9 +6,6 @@ import store from './store'
 import vuetify from './plugins/vuetify';
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
 
-import emailjs from 'emailjs-com';
-Vue.use(emailjs)
-
 import{ init } from 'emailjs-com';
 init("user_VGQM4dJPV57Heymmcui95");
 
@@ -17,11 +14,19 @@ Vue.component('ValidationProvider', ValidationProvider);
 import { ValidationObserver } from 'vee-validate';
 Vue.component('ValidationObserver', ValidationObserver);
 
+import i18n from './i18n'
+
+
+// FlagIcon
+import FlagIcon from 'vue-flag-icon'
+Vue.use(FlagIcon);
+
 Vue.config.productionTip = false
 
 new Vue({
   router,
   store,
   vuetify,
+  i18n,
   render: h => h(App)
 }).$mount('#app')
