@@ -67,6 +67,10 @@ export default {
           src: 'icons/docker.png'
         },
         {
+          title: 'Kubernetes',
+          src: 'icons/kubernetes.png'
+        },
+        {
           title: 'Keycloak',
           src: 'icons/keycloak.jpg'
         },
@@ -106,7 +110,6 @@ export default {
           title: 'Figma',
           src: 'icons/figma.png'
         },
-
         {
           title: 'Auth0',
           src: 'icons/auth0.jpg'
