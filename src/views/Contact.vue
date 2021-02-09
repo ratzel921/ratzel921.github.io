@@ -4,7 +4,7 @@
 
 
     <v-container>
-      <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Contact Me</h2>
+      <h2 class="display-2 font-weight-bold py-3  text-center">{{navigation.contact}}</h2>
 
       <v-responsive class="mx-auto mb-12" width="56">
         <v-divider class="mb-1"></v-divider>
@@ -102,6 +102,12 @@ export default {
       userID: 'user_VGQM4dJPV57Heymmcui95',
 
 
+    }
+  },
+  
+  computed: {
+    navigation() {
+      return this.$t("navigation")
     }
   },
 
