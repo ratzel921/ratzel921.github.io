@@ -42,60 +42,65 @@ export default {
 
   data() {
     return {
-      careers: [
-        {
-          color: '#000000',
-          date: '2005 - 2012',
-          text: 'Realschulabschluss CHR Nagold',
-        },
-        {
-          color: '#000000',
-          date: '09/2012 - 10/2015',
-          text: 'Ausbildung als Elektroniker für Energie- und\n' +
-              'Gebäudetechnik bei Imtech Deutschland GmbH & Co. KG Niederlassung Stuttgart\n',
-        },
-        {
-          color: '#000000',
-          date: '10/2015 - 02/2016',
-          text: 'Ausbildung als Elektroniker für Energie- und Gebäudetechnik bei Elektrohaus Brenner in Kuppingen',
-        },
-        {
-          color: '#000000',
-          date: '02/2016 - 09/2017',
-          text: 'Elektroniker für Energie- und Gebäudetechnik bei Elektrohaus Brenner in Kuppingen',
-        },
-        {
-          color: '#000000',
-          date: '09/2017 - 07/2018',
-          text: '1-jährige Fachhochschulreife an der Rolf-Benz-Schule in Nagold',
-        },
-        {
-          color: '#000000',
-          date: '07/2018 - 09/2018',
-          text: 'Ferienbeschäftigung bei Daimler AG',
-        },
-        {
-          color: '#000000',
-          date: 'Seit 09/2018',
-          text: 'Bachelor Studium im Fachbereich Medieninformatik an der Hochschule der Medien in Stuttgart',
-        },
-        {
-          color: '#000000',
-          date: '08/2019 – 09/2020',
-          text: 'Werkstudent im Bereich Entwicklung von Diensten für Cloud-Plattformen bei Fraunhofer-Institut für Produktionstechnik und Automatisierung IPA in Stuttgart',
-        },
-        {
-          color: '#000000',
-          date: '09/2020 - 03/2021',
-          text: 'Praktikant im Praxissemester im Bereich Digital Innovation bei Novatec Consulting GmbH in Leinfelden-Echterdingen',
-        },
-      ],
+
     }
   },
   computed: {
     navigation() {
       return this.$t("navigation");
     },
+    careerTranslation() {
+      return this.$t("career");
+    },
+    careers() {
+      return [
+        {
+          color: '#000000',
+          date: '2005 - 2012',
+          text: this.careerTranslation.realschule,
+        },
+        {
+          color: '#000000',
+          date: '09/2012 - 10/2015',
+          text: this.careerTranslation.imtech,
+        },
+        {
+          color: '#000000',
+          date: '10/2015 - 02/2016',
+          text: this.careerTranslation.brenner1,
+        },
+        {
+          color: '#000000',
+          date: '02/2016 - 09/2017',
+          text: this.careerTranslation.brenner2,
+        },
+        {
+          color: '#000000',
+          date: '09/2017 - 07/2018',
+          text: this.careerTranslation.fhs,
+        },
+        {
+          color: '#000000',
+          date: '07/2018 - 09/2018',
+          text: this.careerTranslation.damiler,
+        },
+        {
+          color: '#000000',
+          date: 'Seit 09/2018',
+          text: this.careerTranslation.bachelor,
+        },
+        {
+          color: '#000000',
+          date: '08/2019 – 09/2020',
+          text: this.careerTranslation.fraunhofer1,
+        },
+        {
+          color: '#000000',
+          date: '09/2020 - 03/2021',
+          text: this.careerTranslation.novatec,
+        },
+      ]
+    }
   }
 }
 </script>
