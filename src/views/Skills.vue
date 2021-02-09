@@ -30,78 +30,88 @@
 
 <script>
 export default {
-    name: "Skills",
-    data() {
-        return {
-            skills: [{
-                    title: 'HTML',
-                    src: 'icons/html.png'
-                },
-                {
-                    title: 'CSS',
-                    src: 'icons/css.png'
-                },
-                {
-                    title: 'JavaScript',
-                    src: 'icons/javascript.png'
-                },
-                {
-                    title: 'VueJs',
-                    src: 'icons/vuejs.png'
-                },
-                {
-                    title: 'Java',
-                    src: 'icons/java.png'
-                },
-                {
-                    title: 'Spring Boot',
-                    src: 'icons/springBoot.png'
-                },
-                {
-                    title: 'Docker',
-                    src: 'icons/docker.png'
-                },
-                {
-                    title: 'Python',
-                    src: 'icons/python.png'
-                },
-                {
-                    title: 'Linux',
-                    src: 'icons/linux.png'
-                },
-                {
-                    title: 'AWS',
-                    src: 'icons/aws.png'
-                },
-                {
-                    title: 'Terraform',
-                    src: 'icons/terraform.png'
-                },
-                {
-                    title: 'Keycloak',
-                    src: 'icons/keycloak.jpg'
-                },
-                {
-                    title: 'Postgresql',
-                    src: 'icons/postgresql.png'
-                },
-                {
-                    title: 'MongoDB',
-                    src: 'icons/mongoDB.png'
-                },
-                {
-                    title: 'Vagrant',
-                    src: 'icons/vagrant.png'
-                },
-                {
-                    title: 'Jest',
-                    src: 'icons/jest.jpg'
-                },
-                {
-                    title: 'Auth0',
-                    src: 'icons/auth0.jpg'
-                },
-            ],
+  name: "Skills",
+  data() {
+    return {
+      skills: [
+        {
+          title: 'HTML',
+          src: 'icons/html.png'
+        },
+        {
+          title: 'CSS',
+          src: 'icons/css.png'
+        },
+        {
+          title: 'JavaScript',
+          src: 'icons/javascript.png'
+        },
+        {
+          title: 'VueJs',
+          src: 'icons/vuejs.png'
+        },
+        {
+          title: 'Jest',
+          src: 'icons/jest.jpg'
+        },
+        {
+          title: 'Java',
+          src: 'icons/java.png'
+        },
+        {
+          title: 'Spring Boot',
+          src: 'icons/springBoot.png'
+        },
+        {
+          title: 'Docker',
+          src: 'icons/docker.png'
+        },
+        {
+          title: 'Keycloak',
+          src: 'icons/keycloak.jpg'
+        },
+        {
+          title: 'C++',
+          src: 'icons/C++.png'
+        },
+        {
+          title: 'Python',
+          src: 'icons/python.png'
+        },
+        {
+          title: 'Linux',
+          src: 'icons/linux.png'
+        },
+        {
+          title: 'AWS',
+          src: 'icons/aws.png'
+        },
+        {
+          title: 'Terraform',
+          src: 'icons/terraform.png'
+        },
+        {
+          title: 'Vagrant',
+          src: 'icons/vagrant.png'
+        },
+        {
+          title: 'Postgresql',
+          src: 'icons/postgresql.png'
+        },
+        {
+          title: 'MongoDB',
+          src: 'icons/mongoDB.png'
+        },
+        {
+          title: 'Figma',
+          src: 'icons/figma.png'
+        },
+
+        {
+          title: 'Auth0',
+          src: 'icons/auth0.jpg'
+        },
+      ],
         }
     },
     computed: {

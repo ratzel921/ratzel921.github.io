@@ -131,8 +131,8 @@ export default {
               ],
           },
           {
-            site: '/DataworkItSolutions',
-            title: 'Datawork It Solutions',
+            site: '/HyphenTechnologies',
+            title: 'Hyphen Technologies',
             shortDescription: 'My startup which I develop together with 3 other people.',
             screenshots: [
               {
@@ -178,6 +178,10 @@ export default {
                 {
                   title: 'Gitlab',
                   src: 'icons/gitlab.png'
+                },
+                {
+                  title: 'AWS',
+                  src: 'icons/aws.png'
                 },
                 
               ],
