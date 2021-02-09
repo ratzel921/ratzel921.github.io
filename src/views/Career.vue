@@ -86,7 +86,7 @@ export default {
         },
         {
           color: '#000000',
-          date: 'Seit 09/2018',
+          date: '09/2018 - 03/2022',
           text: this.careerTranslation.bachelor,
         },
         {
@@ -98,6 +98,11 @@ export default {
           color: '#000000',
           date: '09/2020 - 03/2021',
           text: this.careerTranslation.novatec,
+        },
+        {
+          color: '#000000',
+          date: '03/2021 - 09/2021',
+          text: this.careerTranslation.fraunhofer1,
         },
       ]
     }

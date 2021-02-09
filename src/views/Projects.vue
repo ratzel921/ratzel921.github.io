@@ -39,7 +39,7 @@
 
 
           <v-row align="center" justify="center">
-            <v-col cols="4" md="2" class=""
+            <v-col cols="1"
               v-for="(item, i) in project.technologies" :key="i">
                   <v-img height="50" width="50" :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
               <!-- <v-img width="50" height="50" :src="require(`@/assets/${item.src}`)" :alt="item.title"/> -->

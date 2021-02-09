@@ -4,7 +4,7 @@
           <About></About>
         </section>
 
-        <section id="liveLine" class="grey lighten-3">
+        <section id="career" class="grey lighten-3">
           <Career></Career>
         </section>
 
