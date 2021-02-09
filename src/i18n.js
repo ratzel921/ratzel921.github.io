@@ -32,6 +32,8 @@ const messages = {
     content: {
       welcome1: "Hey, ich bin Dominik.",
       welcome2: "Ich studiere Informatik an der Hochschule der Medien in Stuttgart."
+    },
+    projects: {
 
     },
   },
@@ -52,6 +54,9 @@ const messages = {
     content: {
       welcome1: "Hey, I'm Dominik.",
       welcome2: "I study computer science at the Stuttgart Media University."
+
+    },
+    projects: {
 
     },
   },

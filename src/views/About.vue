@@ -1,48 +1,46 @@
 <template>
-    <v-container>
-      <v-row align="center" justify="center">
-        <v-col cols="12">
-          <v-row align="center" justify="center">
-              <v-card flat color="grey lighten-3">
-                <v-row align="center" justify="center">
-                  <v-avatar class="elevation-6" size="256">
-                    <v-img src="@/assets/creator/dominik.jpeg"></v-img>
-                  </v-avatar>
-                </v-row>
-                
-                <v-row align="center" justify="center">
-                  <v-card-title class="justify-center">
-                    Dominik Ratzel
-                  </v-card-title>
-                </v-row>
+  <v-container>
+    <v-row align="center" justify="center">
+      <v-col cols="12">
+        <v-row align="center" justify="center">
+            <v-card flat color="grey lighten-3">
+              <v-row align="center" justify="center">
+                <v-avatar class="elevation-6" size="256">
+                  <v-img src="@/assets/creator/dominik.jpeg"></v-img>
+                </v-avatar>
+              </v-row>
 
-                <v-row align="center" justify="center">
-                  <div>
-                    {{ content.welcome1 }}
-                  </div>
-                </v-row>
+              <v-row align="center" justify="center">
+                <v-card-title class="justify-center">
+                  Dominik Ratzel
+                </v-card-title>
+              </v-row>
 
-                <v-row align="center" justify="center">
-                  <div>
-                    {{ content.welcome2 }}
-                  </div>
-                </v-row>
+              <v-row align="center" justify="center">
+                <div>
+                  {{ content.welcome1 }}
+                </div>
+              </v-row>
 
-                <v-row>
-                  <v-col v-for="item in links" :key="item.name">
-                    <v-btn icon text :href="item.link">
-                      <v-icon>{{item.icon}}</v-icon>
-                    </v-btn>
-                  </v-col>
+              <v-row align="center" justify="center">
+                <div>
+                  {{ content.welcome2 }}
+                </div>
+              </v-row>
 
-                </v-row>
-              </v-card>
-            </v-row>
-        </v-col>
-        
+              <v-row>
+                <v-col v-for="item in links" :key="item.name">
+                  <v-btn icon text :href="item.link">
+                    <v-icon>{{item.icon}}</v-icon>
+                  </v-btn>
+                </v-col>
 
-      </v-row>
-    </v-container>
+              </v-row>
+            </v-card>
+          </v-row>
+      </v-col>
+    </v-row>
+  </v-container>
 
 </template>
 

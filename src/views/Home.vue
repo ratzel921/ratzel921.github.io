@@ -8,11 +8,11 @@
           <Career></Career>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="grey lighten-3">
             <Skills></Skills>
         </section>
 
-        <section id="projects" >
+        <section id="projects">
             <Projects></Projects>
         </section>
 
