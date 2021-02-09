@@ -3,7 +3,7 @@
     <v-row align="center" justify="center">
       <v-col cols="12">
         <v-card class="px-5">
-          <h2 class="display-2 font-weight-bold py-3 text-uppercase text-center">{{navigation.skills}}</h2>
+          <h2 class="display-2 font-weight-bold py-3 text-center">{{navigation.skills}}</h2>
 
           <v-responsive class="mx-auto mb-12" width="56">
             <v-divider class="mb-1"></v-divider>

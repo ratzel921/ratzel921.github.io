@@ -3,7 +3,7 @@
     <v-row align="center" justify="center">
       <v-col cols="12">
         <v-card class="px-5">
-          <h2 class="display-2 font-weight-bold py-3 text-uppercase text-center">{{navigation.career}}</h2>
+          <h2 class="display-2 font-weight-bold py-3 text-center">{{navigation.career}}</h2>
           <v-responsive class="mx-auto mb-12" width="56">
             <v-divider class="mb-1"></v-divider>
             <v-divider></v-divider>
@@ -16,12 +16,12 @@
                 small
             >
               <template v-slot:opposite>
-        <span
-            :color="date.color"
-            :style="`color: ${date.color}`"
-            class="headline font-weight-bold"
-            v-text="date.date"
-        ></span>
+                <span
+                    :color="date.color"
+                    :style="`color: ${date.color}`"
+                    class="headline font-weight-bold"
+                    v-text="date.date"
+                ></span>
               </template>
               <div class="py-4 ">
                 <div :style="`color: ${date.color}`" class="font-weight-light mb-4">
