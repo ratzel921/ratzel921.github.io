@@ -6,9 +6,6 @@ import store from './store'
 import vuetify from './plugins/vuetify';
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
 
-import{ init } from 'emailjs-com';
-init("user_VGQM4dJPV57Heymmcui95");
-
 import { ValidationProvider } from 'vee-validate/dist/vee-validate.full.esm';
 Vue.component('ValidationProvider', ValidationProvider);
 import { ValidationObserver } from 'vee-validate';

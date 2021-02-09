@@ -97,15 +97,11 @@ export default {
                     title: 'Jest',
                     src: 'icons/jest.jpg'
                 },
+                {
+                    title: 'Auth0',
+                    src: 'icons/auth0.jpg'
+                },
             ],
-            jobs: [{
-                jobTitle: 'Elektroniker für Energie- und Gebäudetechnik',
-                firmName: 'ELektrohaus Brenner',
-                location: 'Kuppingen',
-                begin: '',
-                end: '',
-                workDescription: '',
-            }],
         }
     },
     computed: {

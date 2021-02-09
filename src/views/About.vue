@@ -18,13 +18,13 @@
 
                 <v-row align="center" justify="center">
                   <div>
-                    Informatik Student
+                    {{ content.welcome1 }}
                   </div>
                 </v-row>
-                
+
                 <v-row align="center" justify="center">
                   <div>
-                    Hochschule der Medien Stuttgart Germany
+                    {{ content.welcome2 }}
                   </div>
                 </v-row>
 
@@ -82,10 +82,14 @@ export default {
           icon: 'fa fa-linkedin',
           link: 'https://de.linkedin.com/in/dominik-ratzel-19652a1a3'
         },
-      ]
-
+      ],
     }
   },
+  computed: {
+    content() {
+      return this.$t("content");
+    },
+  }
 }
 </script>
 

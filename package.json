@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "deploy": "node scripts/gh-pages-deploy.js",
-    "copy": "cp dist/ ../ratzel921.github.io/"
+    "copy": "cp dist/ ../ratzel921.github.io/",
+    "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
   },
   "dependencies": {
     "@tanker/client-browser": "^2.6.1",
@@ -19,6 +20,7 @@
     "roboto-fontface": "*",
     "vee-validate": "^3.4.0",
     "vue": "^2.6.11",
+    "vue-flag-icon": "^1.0.6",
     "vue-i18n": "^8.22.4",
     "vue-router": "^3.2.0",
     "vuetify": "^2.2.11",
@@ -29,6 +31,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/vue-fontawesome": "^2.0.0",
+    "@intlify/vue-i18n-loader": "^1.0.0",
     "@mdi/font": "^5.5.55",
     "@vue/cli-plugin-babel": "^4.5.7",
     "@vue/cli-plugin-pwa": "^4.5.7",
@@ -43,6 +46,7 @@
     "node-sass": "^4.12.0",
     "sass": "^1.19.0",
     "sass-loader": "^8.0.2",
+    "vue-cli-plugin-i18n": "~1.0.1",
     "vue-cli-plugin-vuetify": "~2.0.7",
     "vue-template-compiler": "^2.6.11",
     "vuetify-loader": "^1.3.0"
