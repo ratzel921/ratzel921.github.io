@@ -44,6 +44,9 @@ const messages = {
       fraunhofer1: "Werkstudent im Bereich Entwicklung von Diensten für Cloud-Plattformen bei Fraunhofer-Institut für Produktionstechnik und Automatisierung IPA in Stuttgart",
       novatec: "Praktikant im Praxissemester im Bereich Digital Innovation bei Novatec Consulting GmbH in Leinfelden-Echterdingen",
     },
+    buttons: {
+      reading: "Weiterlesen"
+    },
   },
 
 
@@ -73,6 +76,9 @@ const messages = {
       bachelor: "Bachelor's degree in media informatics at the Stuttgart Media University",
       fraunhofer1: "Working student in the area of developing services for cloud platforms at the Fraunhofer Institute for Manufacturing Engineering and Automation IPA in Stuttgart",
       novatec: "Internship in the practical semester in the field of digital innovation at Novatec Consulting GmbH in Leinfelden-Echterdingen",
+    },
+    buttons: {
+      reading: "Continue Reading"
     },
   },
 

@@ -52,7 +52,7 @@
             <v-col cols="4"></v-col>
             <v-col cols="4">
               <v-btn class="ml-n4 grey white--text"  text :to="project.site">
-                Continue Reading
+                {{ buttons.reading }}
               </v-btn>
             </v-col>
             <v-col cols="4"></v-col>
@@ -361,6 +361,9 @@ export default {
   computed: {
     navigation() {
       return this.$t("navigation")
+    },
+    buttons() {
+      return this.$t("buttons")
     },
     getImage(path) {
       return require(path)
