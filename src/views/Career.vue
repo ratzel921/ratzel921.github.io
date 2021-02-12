@@ -24,7 +24,7 @@
               {{ item.title }}
             </v-card-title>
             <v-card-subtitle> {{item.date}}</v-card-subtitle>
-            <v-card-text class="grey lighten-1 text--primary">
+            <v-card-text class="white text--primary">
               <p class="pa-2 pt-4">{{item.text}}</p>
             </v-card-text>
           </v-card>
