@@ -1,8 +1,5 @@
 <template>
   <div>
-    <div class="py-12"></div>
-
-
     <v-container>
       <h2 class="display-2 font-weight-bold py-3  text-center">{{navigation.contact}}</h2>
 
@@ -76,8 +73,6 @@
 
 
     </v-container>
-
-    <div class="py-12"></div>
   </div>
 </template>
 

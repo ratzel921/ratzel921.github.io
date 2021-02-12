@@ -78,7 +78,7 @@ export default {
           context: 'Ich erlernte sogut wie alle handwerklichen Fähigkeiten von Fräsen und Drehen über finishing mit Schleifpapier bis hin zum Laminieren mit Kohlefaser und Glasfaser.',
         },
       ],
-      
+
     }
   },
   computed: {
@@ -152,6 +152,11 @@ export default {
           color: '#870103',
           date: '09/2020 - 03/2021',
           text: this.careerTranslation.novatec,
+        },
+        {
+          color: '#000000',
+          date: '03/2021 - 09/2021',
+          text: this.careerTranslation.fraunhofer1,
         },
       ]
     }

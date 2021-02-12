@@ -1,7 +1,5 @@
 <template>
   <div>
-    <div class="py-12"></div>
-
     <v-container class="text-center">
       <h2 class="display-2 font-weight-bold py-3  text-center">{{navigation.projects}}</h2>
 
@@ -12,17 +10,17 @@
       </v-responsive>
 
       <v-row justify="center" >
-        <v-col cols="12" xl="6" class="px-4 py-10 border-top" v-for="(project, i) in projects" 
+        <v-col cols="12" xl="6" class="" v-for="(project, i) in projects"
           :key="i" >
 
-          <v-card flat >
-            <v-row align="center" justify="center"> 
+          <v-card flat>
+            <v-row align="center" justify="center">
             <v-card-title class="font-weight-black mt-4 text-uppercase text-decoration-underline">
               {{project.title}}
             </v-card-title>
           </v-row>
 
-          <v-row align="center" justify="center"> 
+          <v-row align="center" justify="center">
             <div class="title font-weight-light mb-4">
               {{project.shortDescription}}
             </div>
@@ -40,8 +38,8 @@
           </v-row>
 
 
-          <v-row align="center" justify="center" class="white"> 
-            <v-col cols="3" md="2" class="title font-weight-light mb-4" 
+          <v-row align="center" justify="center">
+            <v-col cols="1"
               v-for="(item, i) in project.technologies" :key="i">
                   <v-img height="50" width="50" :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
               <!-- <v-img width="50" height="50" :src="require(`@/assets/${item.src}`)" :alt="item.title"/> -->
@@ -50,10 +48,14 @@
             </v-col>
           </v-row>
 
-          <v-row class="grey white--text" justify="center">
-            <v-btn class="ml-n4 my-2" color="white" text :to="project.site">
-              Continue Reading
-            </v-btn>
+          <v-row  justify="center">
+            <v-col cols="4"></v-col>
+            <v-col cols="4">
+              <v-btn class="ml-n4 grey white--text"  text :to="project.site">
+                {{ buttons.reading }}
+              </v-btn>
+            </v-col>
+            <v-col cols="4"></v-col>
           </v-row>
           </v-card>
 
@@ -61,8 +63,6 @@
         </v-col>
       </v-row>
     </v-container>
-
-    <div class="py-12"></div>
   </div>
 </template>
 
@@ -75,7 +75,7 @@ export default {
           {
             site: '/MiniSpielehalle',
             title: 'Mini Spielehalle',
-            shortDescription: 'An online casino with user administration.',
+            shortDescription: 'Casino WebApp mit Benutzerverwaltung',
             screenshots: [
               {
                 src: 'projects/MiniSpielehalle/home.png',
@@ -133,7 +133,7 @@ export default {
           {
             site: '/HyphenTechnologies',
             title: 'Hyphen Technologies',
-            shortDescription: 'My startup which I develop together with 3 other people.',
+            shortDescription: 'Im September 2020, habe ich ein Startup mit 3 weiteren Personen gegründet',
             screenshots: [
               {
                 src: 'projects/DataworkITSolutions/moreComingSoon.png',
@@ -189,7 +189,7 @@ export default {
           {
             site: '/Webshop',
             title: 'Webshop',
-            shortDescription: 'An online webshop with user administration.',
+            shortDescription: 'Webshop WebApp mit Benutzerverwaltung',
             screenshots: [
               {
                 src: 'projects/Webshop/gridView.png',
@@ -248,14 +248,14 @@ export default {
           {
             site: '/DeviceManagement',
             title: 'Device Management',
-            shortDescription: 'As a working student at Fraunhofer i developed the Frontend.',
+            shortDescription: 'Geräte- und Serviceverwaltungsanwendung',
             screenshots: [
               {
                 src: 'projects/DeviceManagement/serviceOverview.png',
               },
-              // {
-              //   src: 'projects/DeviceManagement/orderView2.png',
-              // },
+              {
+                src: 'projects/DeviceManagement/orderView2.png',
+              },
               {
                 src: 'projects/DeviceManagement/newService1.png',
               },
@@ -314,7 +314,7 @@ export default {
           {
             site: '/ParkingControlSystem',
             title: 'Parking Control System',
-            shortDescription: 'IoT and Cloud Services project for a parking guidance system.',
+            shortDescription: 'IoT and Cloud Service Projekt für ein Parkleitsyystem',
             screenshots: [
               {
                 src: 'projects/IoTCloudServices/browser-counter.png',
@@ -361,6 +361,9 @@ export default {
   computed: {
     navigation() {
       return this.$t("navigation")
+    },
+    buttons() {
+      return this.$t("buttons")
     },
     getImage(path) {
       return require(path)

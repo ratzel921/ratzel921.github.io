@@ -9,7 +9,7 @@
                     <v-img src="@/assets/creator/dominik.jpeg"></v-img>
                   </v-avatar>
                 </v-row>
-                
+
                 <v-row align="center" justify="center">
                   <div class="mt-5 headline">
                     {{ content.welcome1 }}

@@ -1,31 +1,30 @@
 <template>
-<div>
-    <div class="py-12"></div>
+  <v-container class="text-center">
+    <v-row align="center" justify="center">
+      <v-col cols="12">
+        <v-card class="px-5">
+          <h2 class="display-2 font-weight-bold py-3 text-center">{{navigation.skills}}</h2>
 
-    <v-container class="text-center">
-        <h2 class="display-2 font-weight-bold py-3 text-center">{{navigation.skills}}</h2>
-
-        <v-responsive class="mx-auto mb-12" width="56">
+          <v-responsive class="mx-auto mb-12" width="56">
             <v-divider class="mb-1"></v-divider>
 
             <v-divider></v-divider>
-        </v-responsive>
+          </v-responsive>
 
-        <v-row justify="center">
+          <v-row justify="center">
             <v-col v-for="(skill, i) in skills" :key="i" cols="6" sm="4" md="2">
-                <v-avatar>
-                    <v-img height="50" width="50" :src="require(`@/assets/${skill.src}`)" :alt="skill.title" />
-                </v-avatar>
-
-                <div class="justify-center text-uppercase">
-                    {{skill.title}}
-                </div>
+              <v-avatar>
+                <v-img height="50" width="50" :src="require(`@/assets/${skill.src}`)" :alt="skill.title" />
+              </v-avatar>
+              <div class="justify-center text-uppercase">
+                {{skill.title}}
+              </div>
             </v-col>
-        </v-row>
-    </v-container>
-
-    <div class="py-12"></div>
-</div>
+          </v-row>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -121,9 +120,9 @@ export default {
         getImage(path) {
             return require(path)
         },
-        navigation() {
-          return this.$t("navigation")
-        }
+      navigation() {
+        return this.$t("navigation");
+      },
     }
 }
 </script>
