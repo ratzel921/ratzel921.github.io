@@ -40,45 +40,6 @@ export default {
 
   data() {
     return {
-      items: [
-        {
-          color: 'blue darken-3',
-          icon: 'mdi-code-braces',
-          title: 'SOTEC | Software & Hardware Engineering - Calw',
-          subtitle: 'Praktikum (03.2021 - 09.2021)',
-          context: 'Softwareentwicklung',
-        },
-        {
-          color: 'green',
-          icon: 'mdi-access-point-network',
-          title: 'Fraunhofer IPA - Stuttgart',
-          subtitle: 'Hilfswissenschaftlicher Arbeiter (09.2020 - 03.2021)',
-          context: 'Netzwerkforschung im Bereich 5G und Vernetzung. Entwicklung und Benutzung von Werkzeugen zur Netzwerkuntersuchung und Kommunikation. ' +
-              'Arbeiten mit klassischer Netzwerktechnik und Raspberry Pis.',
-        },
-        {
-          color: 'red',
-          icon: 'mdi-school-outline',
-          title: 'Hochschule Esslingen - University of applied Sciences',
-          subtitle: 'Maschinenbau - Student (09.2018 - 2022)',
-          context: 'Fachrichtung: Konstruktion und Entwicklung. Zahlreiche Projekte in Richtung sowohl in der Konstruktion und Entwicklung als auch in der Programmierung und EDV.',
-        },
-        {
-          color: 'blue',
-          icon: 'mdi-bookshelf',
-          title: 'Rolf-Benz-Schule in Nagold',
-          subtitle: 'Fachhochschulreife',
-          context: 'Fachhochschulereife in einem Jahr. In technischer Richtung zur Qualifizierung und Vorbereitung auf das Maschinenbau-Studium',
-        },
-        {
-          color: 'orange',
-          icon: 'mdi-wrench-outline',
-          title: 'Daimler AG',
-          subtitle: 'Technischer Modellbauer - Ausbildung (09.2014 - 07.2017)',
-          context: 'Ich erlernte sogut wie alle handwerklichen Fähigkeiten von Fräsen und Drehen über finishing mit Schleifpapier bis hin zum Laminieren mit Kohlefaser und Glasfaser.',
-        },
-      ],
-
     }
   },
   computed: {
