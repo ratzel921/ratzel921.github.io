@@ -90,6 +90,10 @@ export default {
           src: 'icons/aws.png'
         },
         {
+          title: 'Azure',
+          src: 'icons/azure.png'
+        },
+        {
           title: 'Terraform',
           src: 'icons/terraform.png'
         },
@@ -104,6 +108,10 @@ export default {
         {
           title: 'MongoDB',
           src: 'icons/mongoDB.png'
+        },
+        {
+          title: 'Redis',
+          src: 'icons/redis.png'
         },
         {
           title: 'Figma',
