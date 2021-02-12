@@ -154,6 +154,8 @@ export default {
           text: this.careerTranslation.novatec,
         },
         {
+          icon: 'mdi-code-braces',
+          title: 'Werkstudent Fraunhofer',
           color: '#000000',
           date: '03/2021 - 09/2021',
           text: this.careerTranslation.fraunhofer1,
