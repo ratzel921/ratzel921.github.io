@@ -5,7 +5,7 @@
           <v-row align="center" justify="center">
               <v-card flat color="grey lighten-3">
                 <v-row align="center" justify="center">
-                  <v-avatar class="elevation-6" size="500">
+                  <v-avatar class="elevation-12" size="500">
                     <v-img src="@/assets/creator/dominik.jpeg"></v-img>
                   </v-avatar>
                 </v-row>
