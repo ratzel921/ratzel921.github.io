@@ -67,19 +67,19 @@ export default {
     careers() {
       return [
         {
-          icon: 'mdi-bookshelf',
+          icon: 'mdi-school',
           title: this.careerHeadlinesTranslation.realschule,
           date: '2005 - 2012',
           text: this.careerTranslation.realschule,
         },
         {
-          icon: 'mdi-bookshelf',
+          icon: 'mdi-school',
           title: this.careerHeadlinesTranslation.imtech,
           date: '09/2012 - 10/2015',
           text: this.careerTranslation.imtech,
         },
         {
-          icon: 'mdi-bookshelf',
+          icon: 'mdi-school',
           title: this.careerHeadlinesTranslation.brenner1,
           date: '10/2015 - 02/2016',
           text: this.careerTranslation.brenner1,
@@ -91,7 +91,7 @@ export default {
           text: this.careerTranslation.brenner2,
         },
         {
-          icon: 'mdi-bookshelf',
+          icon: 'mdi-school',
           title: this.careerHeadlinesTranslation.fhs,
           date: '09/2017 - 07/2018',
           text: this.careerTranslation.fhs,
