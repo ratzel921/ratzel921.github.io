@@ -41,7 +41,7 @@
           <v-row align="center" justify="center">
             <v-col cols="3" md="2" lg="1"
               v-for="(item, i) in project.technologies" :key="i">
-                  <v-img height="50" width="50" :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
+                  <v-img height="100" width="100" :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
             </v-col>
           </v-row>
 
@@ -99,7 +99,7 @@ export default {
                 },
                 {
                   title: 'JavaScript',
-                  src: 'icons/javascript.png'
+                  src: 'icons/js.png'
                 },
                 {
                   title: 'VueJs',
@@ -151,7 +151,7 @@ export default {
                 },
                 {
                   title: 'JavaScript',
-                  src: 'icons/javascript.png'
+                  src: 'icons/js.png'
                 },
                 {
                   title: 'VueJs',
@@ -222,7 +222,7 @@ export default {
                 },
                 {
                   title: 'JavaScript',
-                  src: 'icons/javascript.png'
+                  src: 'icons/js.png'
                 },
                 {
                   title: 'VueJs',
@@ -246,7 +246,7 @@ export default {
                 },
                 {
                   title: 'Jest',
-                  src: 'icons/jest.jpg'
+                  src: 'icons/jest.png'
                 },
                 {
                   title: 'Postgres',
@@ -293,7 +293,7 @@ export default {
                 },
                 {
                   title: 'JavaScript',
-                  src: 'icons/javascript.png'
+                  src: 'icons/js.png'
                 },
                 {
                   title: 'VueJs',
@@ -317,7 +317,7 @@ export default {
                 },
                 {
                   title: 'Keycloak',
-                  src: 'icons/keycloak.jpg'
+                  src: 'icons/keycloak.png'
                 },
                 {
                   title: 'Postgres',
@@ -402,7 +402,7 @@ export default {
                 },
                 {
                   title: 'Keycloak',
-                  src: 'icons/auth0.jpg'
+                  src: 'icons/auth0.png'
                 },
                 {
                   title: 'Azure',

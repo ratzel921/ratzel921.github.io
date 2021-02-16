@@ -12,11 +12,9 @@
           </v-responsive>
 
           <v-row justify="center">
-            <v-col v-for="(skill, i) in skills" :key="i" cols="6" md="1">
-              <v-avatar>
-                <v-img height="50" width="50" :src="require(`@/assets/${skill.src}`)" :alt="skill.title" />
-              </v-avatar>
-              <div class="justify-center text-uppercase">
+            <v-col v-for="(skill, i) in skills" :key="i" cols="6" md="2">
+                <v-img height="100" width="100" :src="require(`@/assets/${skill.src}`)" :alt="skill.title" />
+              <div class="justify-center ">
                 {{skill.title}}
               </div>
             </v-col>
@@ -43,7 +41,11 @@ export default {
         },
         {
           title: 'JavaScript',
-          src: 'icons/javascript.png'
+          src: 'icons/js.png'
+        },
+        {
+          title: 'NodeJs',
+          src: 'icons/nodejs.png'
         },
         {
           title: 'VueJs',
@@ -51,7 +53,7 @@ export default {
         },
         {
           title: 'Jest',
-          src: 'icons/jest.jpg'
+          src: 'icons/jest.png'
         },
         {
           title: 'Java',
@@ -71,11 +73,15 @@ export default {
         },
         {
           title: 'Keycloak',
-          src: 'icons/keycloak.jpg'
+          src: 'icons/keycloak.png'
+        },
+        {
+          title: 'Auth0',
+          src: 'icons/auth0.png'
         },
         {
           title: 'C++',
-          src: 'icons/C++.png'
+          src: 'icons/c++.png'
         },
         {
           title: 'Python',
@@ -84,6 +90,18 @@ export default {
         {
           title: 'Linux',
           src: 'icons/linux.png'
+        },
+        {
+          title: 'Github',
+          src: 'icons/github.png'
+        },
+        {
+          title: 'Github Actions',
+          src: 'icons/githubActions.png'
+        },
+        {
+          title: 'Gitlab',
+          src: 'icons/gitlab.png'
         },
         {
           title: 'AWS',
@@ -118,8 +136,8 @@ export default {
           src: 'icons/figma.png'
         },
         {
-          title: 'Auth0',
-          src: 'icons/auth0.jpg'
+          title: 'Raspberry PI',
+          src: 'icons/raspberryPI.png'
         },
       ],
         }
