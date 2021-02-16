@@ -29,7 +29,7 @@
         <v-row>
           <v-col align="center" v-for="item in links" :key="item.name">
             <v-btn icon text :href="item.link">
-              <v-icon class="nav-hov">{{item.icon}}</v-icon>
+              <v-icon>{{item.icon}}</v-icon>
             </v-btn>
           </v-col>
 
