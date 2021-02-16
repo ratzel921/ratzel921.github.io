@@ -48,32 +48,32 @@ export default {
       links: [
         {
           name: 'Gmail',
-          icon: 'fa fa-envelope',
+          icon: 'mdi-email',
           link: 'mailto:dominikratzel16@gmail.com'
         },
         {
           name: 'Github',
-          icon: 'fa fa-github',
+          icon: 'mdi-github',
           link: 'https://github.com/ratzel921/'
         },
         {
           name: 'Gitlab',
-          icon: 'fa fa-gitlab',
+          icon: 'mdi-gitlab',
           link: 'https://gitlab.mi.hdm-stuttgart.de/dr079'
         },
         {
           name: 'Facebook',
-          icon: 'fa fa-facebook',
+          icon: 'mdi-facebook',
           link: 'https://de-de.facebook.com/dominik.ratzel'
         },
         {
           name: 'Instagram',
-          icon: 'fa fa-instagram',
+          icon: 'mdi-instagram',
           link: 'https://www.instagram.com/ratzeldominik/'
         },
         {
           name: 'Linkedin',
-          icon: 'fa fa-linkedin',
+          icon: 'mdi-linkedin',
           link: 'https://de.linkedin.com/in/dominik-ratzel-19652a1a3'
         },
       ],
