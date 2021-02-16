@@ -1,4 +1,5 @@
 module.exports = {
+  "productionSourceMap": false,
   "transpileDependencies": [
     "vuetify"
   ],
@@ -8,7 +9,7 @@ module.exports = {
       locale: 'de',
       fallbackLocale: 'de',
       localeDir: 'locales',
-      enableInSFC: true
+      enableInSFC: false
     }
   }
 }
