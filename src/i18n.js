@@ -43,7 +43,7 @@ const messages = {
       bachelor: "Bachelor Studium im Fachbereich Medieninformatik an der Hochschule der Medien in Stuttgart",
       fraunhofer1: "Werkstudent im Bereich Entwicklung von Diensten für Cloud-Plattformen bei Fraunhofer-Institut für Produktionstechnik und Automatisierung IPA in Stuttgart",
       novatec: "Praktikant im Praxissemester im Bereich Digital Innovation bei Novatec Consulting GmbH in Leinfelden-Echterdingen",
-      startup: "Gründung des Startups Hyphen Technologies mit 3 Partnern",
+      startup: "Gründung des Startup Hyphen Technologies mit 3 Partnern",
     },
     careerHeadlines: {
       realschule: "Realschulabschluss",
@@ -55,7 +55,7 @@ const messages = {
       bachelor: "Bachelor Studium",
       fraunhofer1: "Werkstudent bei Fraunhofer-Institut",
       novatec: "Praktikant bei Novatec Consulting GmbH",
-      startup: "Gründung Startups",
+      startup: "Gründung Startup",
     },
     buttons: {
       reading: "Weiterlesen",
