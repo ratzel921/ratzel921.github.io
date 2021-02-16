@@ -1,7 +1,7 @@
 <template>
     <v-container>
         <v-row align="center" justify="center">
-            <h1>Device Management</h1>
+            <h1>Webshop</h1>
         </v-row>
         <v-row align="center" justify="center">
             <h3>This is still in progress</h3>
@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "DeviceManagement",
+  name: "WebShop",
   data() {
     return {}
   },

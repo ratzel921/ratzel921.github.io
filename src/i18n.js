@@ -58,7 +58,31 @@ const messages = {
       startup: "Gründung Startups",
     },
     buttons: {
-      reading: "Weiterlesen"
+      reading: "Weiterlesen",
+      submit: "Senden",
+    },
+    projectHeadlines: {
+      gameHall: "Online Spielehalle",
+      startup: "Hyphen Technologies",
+      webShop: "Online Shop",
+      deviceManagement: "Geräte- und Serviceverwaltung",
+      parkingSystem: "Parkleitsystem",
+      hinH: "Hand in Hand Spendenlauf Stuttgart",
+      beGuided: "BeGuided Design",
+    },
+    projectsText: {
+      gameHall: "Casino WebApp mit Benutzerverwaltung",
+      startup: "Startup Hyphen Technologies",
+      webShop: "Webshop WebApp mit Benutzerverwaltung",
+      deviceManagement: "Geräte- und Serviceverwaltungsanwendung WebApp erstellt bei Fraunhofer",
+      parkingSystem: "IoT and Cloud Service Projekt für ein Parkleitsyystem",
+      hinH: "Middleware Server für den Hand in Hand Spendenlauf Stuttgart erstellt bei Novatec",
+      beGuided: "BeGuided Design erstellt bei Novatec",
+    },
+    fields: {
+      name: "Name*",
+      subject: "Betreff*",
+      message: "Nachricht*",
     },
   },
 
@@ -104,7 +128,31 @@ const messages = {
       startup: "Founding of the startup",
     },
     buttons: {
-      reading: "Continue Reading"
+      reading: "Continue Reading",
+      submit: "Submit",
+    },
+    projectHeadlines: {
+      gameHall: "Online game hall",
+      startup: "Hyphen Technologies",
+      webShop: "WebShop",
+      deviceManagement: "Device and service management",
+      parkingSystem: "Parking control system",
+      hinH: "Hand in hand charity run Stuttgart",
+      beGuided: "BeGuided Design",
+    },
+    projectsText: {
+      gameHall: "Casino WebApp with user management",
+      startup: "Startup Hyphen Technologies",
+      webShop: "Webshop WebApp with user management",
+      deviceManagement: "Device and service management application WebApp created at Fraunhofer",
+      parkingSystem: "IoT and Cloud Service project for a parking guidance system",
+      hinH: "Middleware Server for the Hand in Hand Spendenlauf Stuttgart created at Novatec",
+      beGuided: "BeGuided Design created at Novatec",
+    },
+    fields: {
+      name: "Name*",
+      subject: "Subject*",
+      message: "Message*",
     },
   },
 

@@ -11,7 +11,7 @@ const routes = [
   },
   {
     path: '/MiniSpielehalle',
-    name: 'Mini Spielehalle',
+    name: 'MiniSpielehalle',
     component: () => import('../projects/MiniSpielehalle.vue')
   },
   {
@@ -25,14 +25,24 @@ const routes = [
     component: () => import('../projects/ParkingControlSystem.vue')
   },
   {
-    path: '/Webshop',
-    name: 'Webshop',
-    component: () => import('../projects/Webshop.vue')
+    path: '/WebShop',
+    name: 'WebShop',
+    component: () => import('../projects/WebShop.vue')
   },
   {
     path: '/DeviceManagement',
     name: 'DeviceManagement',
     component: () => import('../projects/DeviceManagement.vue')
+  },
+  {
+    path: '/HandInHand',
+    name: 'HandInHand',
+    component: () => import('../projects/HandInHand.vue')
+  },
+  {
+    path: '/BeGuided',
+    name: 'BeGuided',
+    component: () => import('../projects/BeGuided.vue')
   },
   // {
   //   path: '/projects',

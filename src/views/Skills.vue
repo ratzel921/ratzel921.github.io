@@ -12,8 +12,8 @@
           </v-responsive>
 
           <v-row justify="center">
-            <v-col v-for="(skill, i) in skills" :key="i" cols="6" md="2">
-                <v-img height="100" width="100" :src="require(`@/assets/${skill.src}`)" :alt="skill.title" />
+            <v-col v-for="(skill, i) in skills" :key="i" cols="4" md="2">
+                <v-img :height="Height" :width="Height" :src="require(`@/assets/${skill.src}`)" :alt="skill.title" />
               <div class="justify-center ">
                 {{skill.title}}
               </div>
@@ -148,6 +148,13 @@ export default {
         },
       navigation() {
         return this.$t("navigation");
+      },
+      Height() {
+        if(this.$vuetify.breakpoint.name === 'xs') {
+          return '75px'
+        } else {
+          return '100px'
+        }
       },
     }
 }

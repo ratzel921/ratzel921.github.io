@@ -22,7 +22,7 @@
                             dense
                             clearable
                             :error-messages="errors[0]"
-                            label="Name*"
+                            :label="fields.name"
                             solo
                   ></v-text-field>
                 </ValidationProvider>
@@ -41,7 +41,7 @@
                             dense
                             clearable
                             :error-messages="errors[0]"
-                            label="Subject*"
+                            :label="fields.subject"
                             solo
                   ></v-text-field>
                 </ValidationProvider>
@@ -55,7 +55,7 @@
                             dense
                             clearable
                             :error-messages="errors[0]"
-                            label="Message*"
+                            :label="fields.message"
                             solo
                   ></v-textarea>
                 </ValidationProvider>
@@ -63,7 +63,7 @@
 
               <v-col class="mx-auto" cols="auto">
                 <v-btn :disabled="invalid" color="accent" x-large :href="'mailto:' + sendToMail + '?subject=' + form.subject + '&body=' + form.message">
-                  Submit
+                  {{ buttons.submit }}
                 </v-btn>
               </v-col>
             </v-row>
@@ -87,23 +87,20 @@ export default {
         subject: '',
         message: '',
       },
-
-
-
       sendToMail: 'Dominikratzel16@gmail.com',
-
-      serviceID: 'service_o0cr2xm',
-      templateID: 'template_q7ytghg',
-      userID: 'user_VGQM4dJPV57Heymmcui95',
-
-
     }
   },
   
   computed: {
     navigation() {
       return this.$t("navigation")
-    }
+    },
+    fields() {
+      return this.$t("fields")
+    },
+    buttons() {
+      return this.$t("buttons")
+    },
   },
 
   methods: {

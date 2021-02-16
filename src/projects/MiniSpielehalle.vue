@@ -21,8 +21,9 @@
 // import Tanker from '@tanker/client-browser'
 //
 // const appId = 'REMw3pmXYI2+Fquh7ABNhwEOh58JQNFczvNtW+/lTus='
-
 export default {
+  name: "MiniSpielehalle",
+
     data() {
         return {
             tanker: null,

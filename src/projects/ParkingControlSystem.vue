@@ -8,3 +8,12 @@
         </v-row>
     </v-container>
 </template>
+
+<script>
+export default {
+  name: "ParkingControlSystem",
+  data() {
+    return {}
+  },
+}
+</script>

@@ -26,12 +26,14 @@
 
           <v-row class="text-center" align="center" justify="center">
             <v-col cols="12" align="center">
-              <v-carousel :show-arrows-on-hover="true" hide-delimiter-background hide-delimiters :height="Height">
+              <v-carousel :show-arrows-on-hover="true" hide-delimiter-background hide-delimiters>
                 <v-carousel-item
                     v-for="(item,i) in project.screenshots"
                     :key="i"
+                    :src="require(`@/assets/${item.src}`)"
+                    :alt="item.title"
+                    append
                 >
-                  <v-img :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
                 </v-carousel-item>
               </v-carousel>
             </v-col>
@@ -39,9 +41,9 @@
 
 
           <v-row align="center" justify="center">
-            <v-col cols="3" md="2" lg="1"
+            <v-col cols="2" lg="1"
               v-for="(item, i) in project.technologies" :key="i">
-                  <v-img height="100" width="100" :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
+                  <v-img :height="Height" :width="Height" :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
             </v-col>
           </v-row>
 
@@ -65,29 +67,57 @@ export default {
   name: "Projects",
   data() {
     return {
-      projects: [
-          {
-            site: '/MiniSpielehalle',
-            title: 'Mini Spielehalle',
-            shortDescription: 'Casino WebApp mit Benutzerverwaltung',
-            screenshots: [
-              {
-                src: 'projects/MiniSpielehalle/home.png',
-              },
-              {
-                src: 'projects/MiniSpielehalle/register.png',
-              },
-              {
-                src: 'projects/MiniSpielehalle/lightMode.png',
-              },
-              {
-                src: 'projects/MiniSpielehalle/roulette.png',
-              },
-              {
-                src: 'projects/MiniSpielehalle/admin.png',
-              },
-            ],
-            technologies: 
+    }
+  },
+
+  computed: {
+    navigation() {
+      return this.$t("navigation")
+    },
+    buttons() {
+      return this.$t("buttons")
+    },
+    projectHeadlines() {
+      return this.$t("projectHeadlines")
+    },
+    projectsText() {
+      return this.$t("projectsText")
+    },
+    getImage(path) {
+      return require(path)
+  	},
+    Height() {
+      if(this.$vuetify.breakpoint.name === 'xs') {
+        return '75px'
+      } else {
+        return '100px'
+      }
+    },
+
+    projects() {
+      return [
+        {
+          site: '/MiniSpielehalle',
+          title: this.projectHeadlines.gameHall,
+          shortDescription: this.projectsText.gameHall,
+          screenshots: [
+            {
+              src: 'projects/MiniSpielehalle/home.png',
+            },
+            {
+              src: 'projects/MiniSpielehalle/register.png',
+            },
+            {
+              src: 'projects/MiniSpielehalle/lightMode.png',
+            },
+            {
+              src: 'projects/MiniSpielehalle/roulette.png',
+            },
+            {
+              src: 'projects/MiniSpielehalle/admin.png',
+            },
+          ],
+          technologies:
               [
                 {
                   title: 'HTML',
@@ -121,25 +151,25 @@ export default {
                   title: 'Gitlab',
                   src: 'icons/gitlab.png'
                 },
-                
+
               ],
-          },
-          {
-            site: '/HyphenTechnologies',
-            title: 'Hyphen Technologies',
-            shortDescription: 'Im September 2020, habe ich ein Startup mit 3 weiteren Personen gegründet',
-            screenshots: [
-              {
-                src: 'projects/DataworkITSolutions/moreComingSoon.png',
-              },
-              {
-                src: 'projects/DataworkITSolutions/moreComingSoon.png',
-              },
-              {
-                src: 'projects/DataworkITSolutions/moreComingSoon.png',
-              },
-            ],
-            technologies: 
+        },
+        {
+          site: '/HyphenTechnologies',
+          title: this.projectHeadlines.startup,
+          shortDescription: this.projectsText.startup,
+          screenshots: [
+            {
+              src: 'projects/DataworkITSolutions/moreComingSoon.png',
+            },
+            {
+              src: 'projects/DataworkITSolutions/moreComingSoon.png',
+            },
+            {
+              src: 'projects/DataworkITSolutions/moreComingSoon.png',
+            },
+          ],
+          technologies:
               [
                 {
                   title: 'HTML',
@@ -189,28 +219,28 @@ export default {
                   title: 'Redis',
                   src: 'icons/redis.png'
                 },
-                
+
               ],
-          },
-          {
-            site: '/Webshop',
-            title: 'Webshop',
-            shortDescription: 'Webshop WebApp mit Benutzerverwaltung',
-            screenshots: [
-              {
-                src: 'projects/Webshop/gridView.png',
-              },
-              {
-                src: 'projects/Webshop/productView.png',
-              },
-              {
-                src: 'projects/Webshop/shoppingCard.png',
-              },
-              {
-                src: 'projects/Webshop/boughtCard.png',
-              },
-            ],
-            technologies: 
+        },
+        {
+          site: '/WebShop',
+          title: this.projectHeadlines.webShop,
+          shortDescription: this.projectsText.webShop,
+          screenshots: [
+            {
+              src: 'projects/Webshop/gridView.png',
+            },
+            {
+              src: 'projects/Webshop/productView.png',
+            },
+            {
+              src: 'projects/Webshop/shoppingCard.png',
+            },
+            {
+              src: 'projects/Webshop/boughtCard.png',
+            },
+          ],
+          technologies:
               [
                 {
                   title: 'HTML',
@@ -252,95 +282,95 @@ export default {
                   title: 'Postgres',
                   src: 'icons/postgresql.png'
                 },
-                
+
               ],
-          },
-          {
-            site: '/DeviceManagement',
-            title: 'Device Management',
-            shortDescription: 'Geräte- und Serviceverwaltungsanwendung',
-            screenshots: [
-              {
-                src: 'projects/DeviceManagement/serviceOverview.png',
-              },
-              {
-                src: 'projects/DeviceManagement/orderView2.png',
-              },
-              {
-                src: 'projects/DeviceManagement/newService1.png',
-              },
-              {
-                src: 'projects/DeviceManagement/newService2.png',
-              },
-              {
-                src: 'projects/DeviceManagement/newService3.png',
-              },
-              {
-                src: 'projects/DeviceManagement/newService4.png',
-              },
-              {
-                src: 'projects/DeviceManagement/newService5.png',
-              },
-            ],
-            technologies: [
-                {
-                  title: 'HTML',
-                  src: 'icons/html.png'
-                },
-                {
-                  title: 'CSS',
-                  src: 'icons/css.png'
-                },
-                {
-                  title: 'JavaScript',
-                  src: 'icons/js.png'
-                },
-                {
-                  title: 'VueJs',
-                  src: 'icons/vuejs.png'
-                },
-                {
-                  title: 'Java',
-                  src: 'icons/java.png'
-                },
-                {
-                  title: 'Spring Boot',
-                  src: 'icons/springBoot.png'
-                },
-                {
-                  title: 'Docker',
-                  src: 'icons/docker.png'
-                },
-                {
-                  title: 'Gitlab',
-                  src: 'icons/gitlab.png'
-                },
-                {
-                  title: 'Keycloak',
-                  src: 'icons/keycloak.png'
-                },
-                {
-                  title: 'Postgres',
-                  src: 'icons/postgresql.png'
-                },
-            ],
-          },
-          {
-            site: '/ParkingControlSystem',
-            title: 'Parking Control System',
-            shortDescription: 'IoT and Cloud Service Projekt für ein Parkleitsyystem',
-            screenshots: [
-              {
-                src: 'projects/IoTCloudServices/browser-counter.png',
-              },
-              {
-                src: 'projects/IoTCloudServices/connect-devices.png',
-              },
-              {
-                src: 'projects/IoTCloudServices/aws.jpeg',
-              },
-            ],
-            technologies: 
+        },
+        {
+          site: '/DeviceManagement',
+          title: this.projectHeadlines.deviceManagement,
+          shortDescription: this.projectsText.deviceManagement,
+          screenshots: [
+            {
+              src: 'projects/DeviceManagement/serviceOverview.png',
+            },
+            {
+              src: 'projects/DeviceManagement/orderView2.png',
+            },
+            {
+              src: 'projects/DeviceManagement/newService1.png',
+            },
+            {
+              src: 'projects/DeviceManagement/newService2.png',
+            },
+            {
+              src: 'projects/DeviceManagement/newService3.png',
+            },
+            {
+              src: 'projects/DeviceManagement/newService4.png',
+            },
+            {
+              src: 'projects/DeviceManagement/newService5.png',
+            },
+          ],
+          technologies: [
+            {
+              title: 'HTML',
+              src: 'icons/html.png'
+            },
+            {
+              title: 'CSS',
+              src: 'icons/css.png'
+            },
+            {
+              title: 'JavaScript',
+              src: 'icons/js.png'
+            },
+            {
+              title: 'VueJs',
+              src: 'icons/vuejs.png'
+            },
+            {
+              title: 'Java',
+              src: 'icons/java.png'
+            },
+            {
+              title: 'Spring Boot',
+              src: 'icons/springBoot.png'
+            },
+            {
+              title: 'Docker',
+              src: 'icons/docker.png'
+            },
+            {
+              title: 'Gitlab',
+              src: 'icons/gitlab.png'
+            },
+            {
+              title: 'Keycloak',
+              src: 'icons/keycloak.png'
+            },
+            {
+              title: 'Postgres',
+              src: 'icons/postgresql.png'
+            },
+          ],
+        },
+        {
+          site: '/ParkingControlSystem',
+          title: this.projectHeadlines.parkingSystem,
+          shortDescription: this.projectsText.parkingSystem,
+          screenshots: [
+            {
+              src: 'projects/IoTCloudServices/browser-counter.png',
+            },
+            {
+              src: 'projects/IoTCloudServices/connect-devices.png',
+            },
+            {
+              src: 'projects/IoTCloudServices/aws.jpeg',
+            },
+          ],
+          technologies:
               [
                 {
                   title: 'Docker',
@@ -367,10 +397,11 @@ export default {
                   src: 'icons/vagrant.png'
                 },
               ],
-          },{
+        },
+        {
           site: '/HandInHand',
-          title: 'Hand in Hand Spendenlauf Suttgart',
-          shortDescription: 'Middleware Server für den Hand in Hand Spendenlauf Stuttgart',
+          title: this.projectHeadlines.hinH,
+          shortDescription: this.projectsText.hinH,
           screenshots: [
             {
               src: 'projects/DataworkITSolutions/moreComingSoon.png',
@@ -410,27 +441,31 @@ export default {
                 },
               ],
         },
-      ],
+        {
+          site: '/BeGuided',
+          title: this.projectHeadlines.beGuided,
+          shortDescription: this.projectsText.beGuided,
+          screenshots: [
+            {
+              src: 'projects/DataworkITSolutions/moreComingSoon.png',
+            },
+            {
+              src: 'projects/DataworkITSolutions/moreComingSoon.png',
+            },
+            {
+              src: 'projects/DataworkITSolutions/moreComingSoon.png',
+            },
+          ],
+          technologies:
+              [
+                {
+                  title: 'Figma',
+                  src: 'icons/figma.png'
+                },
+              ],
+        },
+      ]
     }
-  },
-
-  computed: {
-    navigation() {
-      return this.$t("navigation")
-    },
-    buttons() {
-      return this.$t("buttons")
-    },
-    getImage(path) {
-      return require(path)
-  	},
-    Height() {
-      if(this.$vuetify.breakpoint.name === 'xs') {
-        return '100%'
-      } else {
-        return '450'
-      }
-    } 
   }
 }
 </script>
