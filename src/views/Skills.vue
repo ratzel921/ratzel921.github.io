@@ -13,7 +13,7 @@
 
           <v-row justify="center">
             <v-col v-for="(skill, i) in skills" :key="i" cols="4" md="2">
-                <v-img :height="Height" :width="Height" :src="require(`../assets/${skill.src}`)" :alt="skill.title" />
+                <v-img :height="Height" :width="Height" :src="require(`@/assets/${skill.src}`)" :alt="skill.title" />
               <div class="justify-center ">
                 {{skill.title}}
               </div>
