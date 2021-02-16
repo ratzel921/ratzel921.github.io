@@ -1,0 +1,26 @@
+$light-palette: (
+  // Main - applied to body
+    'main-text': black,
+  //Hintergrundfarbe
+    'main-color': #ffffff,
+  // Primary
+    'primary-text': black,
+  // Navigation Farbe
+    'primary-color': #c9c9c9,
+  //Dialog-color
+    'main-dialog': #c9c9c9,
+  //draggable-list-color
+    'dragg-color': #dbc6a1,
+  //draggable-list-color-ghosting
+    'ghost-color': #fdd479,
+  // Vuetify overwrites colors
+    'vuetify-blue': #303f9f,
+  //Button-colors
+    'accept-color': #f99d1c,
+  //hover-color-table vorher: #f99d1c
+    'hover-color': #edcb91,
+  //hover-color-icon vorher: #f99d1c
+    'hover-icon-color': #edcb91,
+  //Bordercolor
+    'border-color': #ff9500
+);

@@ -1,0 +1,201 @@
+// Defines the app theme
+// Requires a theme which contains a color palette
+// See also https://sass-lang.com/documentation/at-rules/mixin#arguments
+@mixin appTheme($theme) {
+  $primary-text: map-get($theme, 'primary-text');
+  $primary-color: map-get($theme, 'primary-color');
+
+  $main-text: map-get($theme, 'main-text');
+  $main-color: map-get($theme, 'main-color');
+  $main-dialog: map-get($theme, 'main-dialog');
+  $dragg-color: map-get($theme, 'dragg-color');
+  $ghost-color: map-get($theme, 'ghost-color');
+  $accept-color: map-get($theme, 'accept-color');
+  $hover-color: map-get($theme, 'hover-color');
+  $hover-icon-color: map-get($theme, 'hover-icon-color');
+  $border-color: map-get($theme, 'border-color');
+
+  // Vuetify default colors
+  $vuetify-blue: map-get($theme, 'vuetify-blue');
+
+  // $accept-color: #1e88e5;
+  $cancel-color: #757575;
+  $success-color: #4caf50;
+  $warning-color: #f44336;
+  $important-color: #fdd835;
+  $white-color: #030303;
+  //color: $main-text;
+  //background-color: $main-color;
+
+
+
+  * {
+    //font-family: Courier New;
+    font-family: Comic Sans MS;
+  }
+
+  // Headline Logo
+  .logo {
+    font-family: Courier New;
+    //font-family: "Brush Script MT";
+    letter-spacing: 0.5rem;
+    border-radius: 5px;
+    &:hover {
+      color: $hover-icon-color !important;
+      cursor: pointer;
+    }
+  }
+
+
+  button {
+    .v-btn__content {
+      span {
+        color: #ffffff !important;
+      }
+    }
+  }
+  .v-btn {
+    .v-btn__content {
+      span {
+        color: #ffffff !important;
+      }
+      color: #ffffff !important;
+    }
+  }
+  .v-btn::before{
+    //background-color: $accept-color;
+    //opacity: 10%;
+  }
+
+  //Dropdowns
+  .v-menu__content {
+    .v-list {
+      background-color: $dragg-color;
+      :hover {
+        background-color: $hover-color !important;
+        cursor: pointer;
+      }
+
+      .v-list-item__title {
+        color: $primary-text;
+        // :hover {
+        //   color: $hover-color !important;
+        //   cursor: pointer;
+        // }
+      }
+    }
+  }
+
+  //textfields
+  .v-text-field {
+    input {
+      color: $primary-text !important;
+      caret-color: $primary-text !important;
+      background-color: transparent !important;
+    }
+    label {
+      color: $primary-text !important;
+    }
+    .v-input__control {
+      .v-input__slot:before {
+        background-color: $primary-text !important;
+        //border-color: $accept-color !important;
+      }
+      .v-input__slot:after {
+        color: $accept-color !important;
+      }
+    }
+    textarea {
+      color: $primary-text !important;
+    }
+  }
+
+  .v-input.v-input--is-focused{
+    .v-input__prepend-outer{
+      .v-input__icon{
+        color: $accept-color !important;
+        .v-application.v-primary--text{
+          color: $accept-color !important;
+        }
+      }
+    }
+  }
+  i.v-icon.notranslate.mdi.mdi-calendar.theme--light{
+    //color: $accept-color !important;
+  }
+
+
+
+  //chips in texfields
+  span.v-chip.v-chip--no-color.theme--light.v-size--small{
+    background: $hover-color !important;
+    color: $primary-text !important;
+  }
+
+  // Switches
+  .theme--light.v-input--switch .v-input--switch__track {
+    color: #757575 !important;
+  }
+  //Checkboxes
+  .v-input--selection-controls__input{
+    .primary--text{
+      color: $accept-color !important;
+    }
+  }
+  //Navbar
+  .navHover {
+    :hover {
+      color: $hover-icon-color !important;
+      cursor: pointer;
+    }
+  }
+
+  //Timeline in Product View
+  .theme--light.v-timeline::before {
+    background: $cancel-color !important;
+    opacity: 0.5;
+  }
+
+  div.v-toolbar__content {
+    color: $primary-text;
+    background-color: $primary-color;
+  }
+
+  .v-main {
+    color: $main-text;
+    background-color: $main-color;
+  }
+
+  .v-navigation-drawer {
+    color: $primary-text;
+    background-color: $primary-color;
+    margin-top: 55px;
+  }
+
+  .v-icon {
+    color: $primary-text !important;
+  }
+
+  .v-footer {
+    color: $primary-text;
+    background-color: $primary-color;
+    // z-index: 100;
+  }
+
+  h1 {
+    color: $main-text;
+  }
+  h5 {
+    color: $main-text;
+  }
+
+  a {
+    color: $main-color !important;
+  }
+
+  // V-Card
+  .v-card__title {
+    color: $primary-color;
+  }
+
+}

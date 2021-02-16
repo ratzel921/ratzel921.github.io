@@ -12,20 +12,20 @@
           <v-timeline-item
               v-for="(item, i) in careers"
               :key="i"
-              color="black"
               :icon="item.icon"
               fill-dot
+              :color="dotColor"
           >
-            <v-card elevation="12"
-                color="black"
-                dark
+            <v-card
+                class="carrerCard"
+                elevation="12"
                 width="600"
             >
               <v-col>
                 {{ item.title }}
               </v-col>
               <v-col> {{item.date}}</v-col>
-              <v-card-text class="white text--primary">
+              <v-card-text >
                 <p>{{item.text}}</p>
               </v-card-text>
             </v-card>
@@ -37,6 +37,8 @@
 </template>
 
 <script>
+import {mapGetters} from "vuex";
+
 export default {
   name: "Career",
 
@@ -45,6 +47,14 @@ export default {
     }
   },
   computed: {
+    ...mapGetters(['getTheme']),
+    dotColor() {
+      if (this.getTheme === 'darkTheme') {
+        return '#2d405e'
+      }else {
+        return '#edcb91'
+      }
+    },
     navigation() {
       return this.$t("navigation");
     },

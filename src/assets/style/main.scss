@@ -1,0 +1,17 @@
+// Import palette for dark theme
+@import 'themes/dark-theme.scss';
+// Import palette for light theme
+@import 'themes/light-theme.scss';
+// Import theme definition
+@import 'themes/theme.scss';
+
+.darkTheme {
+  // Apply dark palette on theme definition
+  @include appTheme($dark-palette);
+}
+
+.lightTheme {
+  // Apply light palette on theme definition
+  @include appTheme($light-palette);
+}
+

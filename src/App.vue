@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="app" :class="getTheme">
     <TopNavBar></TopNavBar>
 
     <v-main>
@@ -14,6 +14,8 @@
 <script>
 import TopNavBar from "@/views/components/TopNavBar";
 import Footer from "@/views/components/Footer";
+import { mapGetters } from 'vuex';
+
 export default {
   name: 'App',
   components: {Footer, TopNavBar},
@@ -22,5 +24,11 @@ export default {
         
       }
     },
+  computed: {
+    ...mapGetters(['getTheme']),
+  },
 };
 </script>
+
+<style src="@/assets/style/main.scss" lang="scss"></style>
+

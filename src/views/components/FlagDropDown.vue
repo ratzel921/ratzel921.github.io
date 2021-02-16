@@ -1,5 +1,5 @@
 <template>
-  <v-menu class="" auto offset-y bottom transition="slide-y-transition">
+  <v-menu :dark="getTheme === 'darkTheme'" auto offset-y bottom transition="slide-y-transition">
     <template v-slot:activator="{ on }">
       <v-app-bar-nav-icon v-on="on" icon>
         <flag :iso="Flag" v-bind:squared="false" />
@@ -26,6 +26,7 @@ export default {
   computed: {
     ...mapGetters([
       "languages",
+      "getTheme"
     ]),
 
     Flag() {
