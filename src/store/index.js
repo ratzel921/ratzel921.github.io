@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import projects from './modules/projects/projects';
 import language from './modules/language/language';
 import style from "@/store/modules/style/style";
 
@@ -16,7 +15,6 @@ export default new Vuex.Store({
   actions: {
   },
   modules: {
-    projects,
     language,
     style,
   }
