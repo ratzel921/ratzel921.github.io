@@ -7,20 +7,20 @@
         <h3>This is still in progress</h3>
     </v-row>
 
-    <div v-if="ready">
-        <h1>tanker-encrypt-decrypt tutorial</h1>
-    </div>
-    <div v-else>
-        <p>Loading</p>
-    </div>
+<!--    <div v-if="ready">-->
+<!--        <h1>tanker-encrypt-decrypt tutorial</h1>-->
+<!--    </div>-->
+<!--    <div v-else>-->
+<!--        <p>Loading</p>-->
+<!--    </div>-->
 </v-container>
 </template>
 
 <script>
-import FakeAuthentication from '@tanker/fake-authentication'
-import Tanker from '@tanker/client-browser'
-
-const appId = 'REMw3pmXYI2+Fquh7ABNhwEOh58JQNFczvNtW+/lTus='
+// import FakeAuthentication from '@tanker/fake-authentication'
+// import Tanker from '@tanker/client-browser'
+//
+// const appId = 'REMw3pmXYI2+Fquh7ABNhwEOh58JQNFczvNtW+/lTus='
 
 export default {
     data() {
@@ -31,14 +31,14 @@ export default {
 
         }
     },
-    created() {
-        this.tanker = new Tanker({
-            appId
-        })
-        this.fakeAuth = new FakeAuthentication({
-            appId
-        })
-    },
+    // created() {
+    //     this.tanker = new Tanker({
+    //         appId
+    //     })
+    //     this.fakeAuth = new FakeAuthentication({
+    //         appId
+    //     })
+    // },
     mounted() {
         this.ready = true
     }
