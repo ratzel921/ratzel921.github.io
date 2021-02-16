@@ -1,9 +1,9 @@
 <template>
   <v-container class="text-center">
-    <v-row align="center" justify="center">
-      <v-col cols="12">
-        <v-card class="px-5">
-          <h2 class="display-2 font-weight-bold py-3 text-center">{{navigation.skills}}</h2>
+    <v-row >
+      <v-col cols="12" align="center">
+        <v-card class="px-5" elevation="12">
+          <h2 class="display-1 font-weight-bold py-3 text-center">{{navigation.skills}}</h2>
 
           <v-responsive class="mx-auto mb-12" width="56">
             <v-divider class="mb-1"></v-divider>
@@ -12,7 +12,7 @@
           </v-responsive>
 
           <v-row justify="center">
-            <v-col v-for="(skill, i) in skills" :key="i" cols="6" sm="4" md="2">
+            <v-col v-for="(skill, i) in skills" :key="i" cols="6" md="1">
               <v-avatar>
                 <v-img height="50" width="50" :src="require(`@/assets/${skill.src}`)" :alt="skill.title" />
               </v-avatar>

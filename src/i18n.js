@@ -43,6 +43,19 @@ const messages = {
       bachelor: "Bachelor Studium im Fachbereich Medieninformatik an der Hochschule der Medien in Stuttgart",
       fraunhofer1: "Werkstudent im Bereich Entwicklung von Diensten für Cloud-Plattformen bei Fraunhofer-Institut für Produktionstechnik und Automatisierung IPA in Stuttgart",
       novatec: "Praktikant im Praxissemester im Bereich Digital Innovation bei Novatec Consulting GmbH in Leinfelden-Echterdingen",
+      startup: "Gründung des Startups Hyphen Technologies mit 3 Partnern",
+    },
+    careerHeadlines: {
+      realschule: "Realschulabschluss",
+      imtech: "Ausbildung bei Imtech",
+      brenner1: "Ausbildung bei Elektrohaus Brenner",
+      brenner2: "Elektroniker bei Elektrohaus Brenner",
+      fhs: "Fachhochschulreife",
+      damiler: "Ferienbeschäftigung bei Daimler AG",
+      bachelor: "Bachelor Studium",
+      fraunhofer1: "Werkstudent bei Fraunhofer-Institut",
+      novatec: "Praktikant bei Novatec Consulting GmbH",
+      startup: "Gründung Startups",
     },
     buttons: {
       reading: "Weiterlesen"
@@ -76,6 +89,19 @@ const messages = {
       bachelor: "Bachelor's degree in media informatics at the Stuttgart Media University",
       fraunhofer1: "Working student in the area of developing services for cloud platforms at the Fraunhofer Institute for Manufacturing Engineering and Automation IPA in Stuttgart",
       novatec: "Internship in the practical semester in the field of digital innovation at Novatec Consulting GmbH in Leinfelden-Echterdingen",
+      startup: "Founding of the startup Hyphen Technologies with 3 partners",
+    },
+    careerHeadlines: {
+      realschule: "High school diploma",
+      imtech: "Training at Imtech",
+      brenner1: "Training at Elektrohaus Brenner",
+      brenner2: "Electronics technician at Elektrohaus Brenner",
+      fhs: "Advanced technical college",
+      damiler: "Vacation employment at Daimler AG",
+      bachelor: "Bachelor study",
+      fraunhofer1: "Working student at Fraunhofer Institute\n",
+      novatec: "Trainee at Novatec Consulting GmbH\n",
+      startup: "Founding of the startup",
     },
     buttons: {
       reading: "Continue Reading"

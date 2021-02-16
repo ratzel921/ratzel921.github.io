@@ -1,40 +1,42 @@
 <template>
-    <v-container>
-      <v-row align="center" justify="center">
-        <v-col cols="12">
-          <v-row align="center" justify="center">
-              <v-card flat color="grey lighten-3">
-                <v-row align="center" justify="center">
-                  <v-avatar class="elevation-12" size="500">
-                    <v-img src="@/assets/creator/dominik.jpeg"></v-img>
-                  </v-avatar>
-                </v-row>
+  <v-container>
+    <v-row align="center" justify="center" class="pt-3">
+      <v-card flat color="grey lighten-3" >
+        <v-row>
+          <v-col cols="12" align="center">
+            <v-avatar class="elevation-12" :size="size">
+              <v-img src="@/assets/creator/dominik.jpeg"></v-img>
+            </v-avatar>
+          </v-col>
+        </v-row>
 
-                <v-row align="center" justify="center">
-                  <div class="mt-5 headline">
-                    {{ content.welcome1 }}
-                  </div>
-                </v-row>
+        <v-row>
+          <v-col cols="12" align="center">
+            <div class="mt-5 headline">
+              {{ content.welcome1 }}
+            </div>
+          </v-col>
+        </v-row>
 
-                <v-row align="center" justify="center">
-                  <div>
-                    {{ content.welcome2 }}
-                  </div>
-                </v-row>
+        <v-row >
+          <v-col cols="12" align="center">
+            <div>
+              {{ content.welcome2 }}
+            </div>
+          </v-col>
+        </v-row>
 
-                <v-row>
-                  <v-col v-for="item in links" :key="item.name">
-                    <v-btn icon text :href="item.link">
-                      <v-icon>{{item.icon}}</v-icon>
-                    </v-btn>
-                  </v-col>
+        <v-row>
+          <v-col align="center" v-for="item in links" :key="item.name">
+            <v-btn icon text :href="item.link">
+              <v-icon>{{item.icon}}</v-icon>
+            </v-btn>
+          </v-col>
 
-                </v-row>
-              </v-card>
-            </v-row>
-        </v-col>
-      </v-row>
-    </v-container>
+        </v-row>
+      </v-card>
+    </v-row>
+  </v-container>
 
 </template>
 
@@ -78,6 +80,13 @@ export default {
     }
   },
   computed: {
+    size() {
+      if (this.$vuetify.breakpoint.smAndUp) {
+        return '400'
+      } else {
+        return '300'
+      }
+    },
     content() {
       return this.$t("content");
     },

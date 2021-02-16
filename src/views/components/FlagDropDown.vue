@@ -1,19 +1,19 @@
 <template>
-    <v-menu auto offset-y bottom transition="slide-y-transition">
-      <template v-slot:activator="{ on }">
-        <v-app-bar-nav-icon v-on="on" icon>
-          <flag :iso="Flag" v-bind:squared="false" />
-        </v-app-bar-nav-icon>
-      </template>
+  <v-menu class="" auto offset-y bottom transition="slide-y-transition">
+    <template v-slot:activator="{ on }">
+      <v-app-bar-nav-icon v-on="on" icon>
+        <flag :iso="Flag" v-bind:squared="false" />
+      </v-app-bar-nav-icon>
+    </template>
 
-      <v-btn
-          v-for="entry in languages"
-          :key="entry.title"
-          @click="changeLocale(entry.language)"
-      >
-        <flag :iso="entry.flag" v-bind:squared="false" />
-      </v-btn>
-    </v-menu>
+    <v-btn
+        v-for="entry in languages"
+        :key="entry.title"
+        @click="changeLocale(entry.language)"
+    >
+      <flag :iso="entry.flag" v-bind:squared="false" />
+    </v-btn>
+  </v-menu>
 </template>
 
 <script>

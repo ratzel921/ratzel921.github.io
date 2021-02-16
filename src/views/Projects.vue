@@ -3,63 +3,57 @@
     <v-container class="text-center">
       <h2 class="display-2 font-weight-bold py-3  text-center">{{navigation.projects}}</h2>
 
-      <v-responsive class="mx-auto mb-12" width="56">
-        <v-divider class="mb-1"></v-divider>
-
-        <v-divider></v-divider>
-      </v-responsive>
-
       <v-row justify="center" >
-        <v-col cols="12" xl="6" class="" v-for="(project, i) in projects"
+        <v-col cols="12" xl="6" v-for="(project, i) in projects"
           :key="i" >
 
           <v-card flat>
             <v-row align="center" justify="center">
-            <v-card-title class="font-weight-black mt-4 text-uppercase text-decoration-underline">
-              {{project.title}}
-            </v-card-title>
+              <v-col cols="12" align="center">
+                <div class="display-1 font-weight-black mt-4 text-uppercase text-decoration-underline">
+                  {{project.title}}
+                </div>
+              </v-col>
           </v-row>
 
           <v-row align="center" justify="center">
-            <div class="title font-weight-light mb-4">
-              {{project.shortDescription}}
-            </div>
+            <v-col cols="12" align="center">
+              <div class="title font-weight-light mb-4">
+                {{project.shortDescription}}
+              </div>
+            </v-col>
           </v-row>
 
           <v-row class="text-center" align="center" justify="center">
-            <v-carousel :show-arrows-on-hover="true" hide-delimiter-background hide-delimiters :height="Height">
-              <v-carousel-item
-                v-for="(item,i) in project.screenshots"
-                :key="i"
-              >
-              <v-img :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
-              </v-carousel-item>
-            </v-carousel>
+            <v-col cols="12" align="center">
+              <v-carousel :show-arrows-on-hover="true" hide-delimiter-background hide-delimiters :height="Height">
+                <v-carousel-item
+                    v-for="(item,i) in project.screenshots"
+                    :key="i"
+                >
+                  <v-img :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
+                </v-carousel-item>
+              </v-carousel>
+            </v-col>
           </v-row>
 
 
           <v-row align="center" justify="center">
-            <v-col cols="1"
+            <v-col cols="3" md="2" lg="1"
               v-for="(item, i) in project.technologies" :key="i">
                   <v-img height="50" width="50" :src="require(`@/assets/${item.src}`)" :alt="item.title"/>
-              <!-- <v-img width="50" height="50" :src="require(`@/assets/${item.src}`)" :alt="item.title"/> -->
-
-              <!-- <v-icon>{{item.icon}}</v-icon> -->
             </v-col>
           </v-row>
 
           <v-row  justify="center">
-            <v-col cols="4"></v-col>
-            <v-col cols="4">
+            <v-col cols="4" align="center">
               <v-btn class="ml-n4 grey white--text"  text :to="project.site">
                 {{ buttons.reading }}
               </v-btn>
             </v-col>
-            <v-col cols="4"></v-col>
           </v-row>
           </v-card>
-
-
+          <hr>
         </v-col>
       </v-row>
     </v-container>

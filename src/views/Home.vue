@@ -1,24 +1,24 @@
 <template>
     <div>
-        <section id="about-me"  class="grey lighten-3">
-          <About></About>
-        </section>
+      <v-col cols="12" id="about-me"  class="grey lighten-3">
+        <About></About>
+      </v-col>
 
-        <section id="career" class="grey lighten-3">
-          <Career></Career>
-        </section>
+      <v-col cols="12" id="career" class="grey lighten-3">
+        <Career></Career>
+      </v-col>
 
-        <section id="skills" class="grey lighten-3">
-            <Skills></Skills>
-        </section>
+      <v-col cols="12" id="skills" class="grey lighten-3">
+        <Skills></Skills>
+      </v-col>
 
-        <section id="projects">
-            <Projects></Projects>
-        </section>
+      <v-col cols="12" id="projects">
+        <Projects></Projects>
+      </v-col>
 
-        <v-sheet id="contact" class="grey lighten-3"  tag="section" tile>
-            <Contact></Contact>
-        </v-sheet>
+      <v-col cols="12" id="contact" class="grey lighten-3"  tag="section" tile>
+        <Contact></Contact>
+      </v-col>
     </div>
 </template>
 

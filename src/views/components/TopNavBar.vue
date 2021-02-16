@@ -1,10 +1,10 @@
 <template>
   <v-app-bar app dark color="#292929" height="50">
-    <v-btn class="mx-auto" text to="/" @click="$vuetify.goTo('#about-me')">
-      Dominik Ratzel
+    <v-spacer></v-spacer>
+    <v-btn text to="/" @click="$vuetify.goTo('#about-me')">
+      <v-icon>mdi-home</v-icon>
     </v-btn>
-    <div class="mx-auto" v-if="$route.path === '/' && $vuetify.breakpoint.name !== 'xs'">
-      <v-spacer></v-spacer>
+    <div v-if="$route.path === '/' && showNavContent">
       <v-btn text @click="$vuetify.goTo('#about-me')">
         {{ navigation.about }}
       </v-btn>
@@ -20,8 +20,9 @@
       <v-btn text @click="$vuetify.goTo('#contact')">
         {{ navigation.contact }}
       </v-btn>
-      <FlagDropDown/>
     </div>
+    <FlagDropDown/>
+    <v-spacer></v-spacer>
   </v-app-bar>
 </template>
 
@@ -31,6 +32,11 @@ export default {
   name: "TopNavBar",
   components: {FlagDropDown},
   computed: {
+    showNavContent() {
+      if (this.$vuetify.breakpoint.name === "lg" ||  this.$vuetify.breakpoint.name === "xl") {
+        return true;
+      }
+    },
     navigation() {
       return this.$t("navigation");
     },
