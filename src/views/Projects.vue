@@ -176,12 +176,24 @@ export default {
                   src: 'icons/docker.png'
                 },
                 {
+                  title: 'Kubernetes',
+                  src: 'icons/kubernetes.png'
+                },
+                {
                   title: 'Gitlab',
                   src: 'icons/gitlab.png'
                 },
                 {
                   title: 'AWS',
                   src: 'icons/aws.png'
+                },
+                {
+                  title: 'Postgres',
+                  src: 'icons/postgresql.png'
+                },
+                {
+                  title: 'Redis',
+                  src: 'icons/redis.png'
                 },
                 
               ],
@@ -241,6 +253,10 @@ export default {
                 {
                   title: 'Jest',
                   src: 'icons/jest.jpg'
+                },
+                {
+                  title: 'Postgres',
+                  src: 'icons/postgresql.png'
                 },
                 
               ],
@@ -309,6 +325,10 @@ export default {
                   title: 'Keycloak',
                   src: 'icons/keycloak.jpg'
                 },
+                {
+                  title: 'Postgres',
+                  src: 'icons/postgresql.png'
+                },
             ],
           },
           {
@@ -353,7 +373,49 @@ export default {
                   src: 'icons/vagrant.png'
                 },
               ],
-          },
+          },{
+          site: '/HandInHand',
+          title: 'Hand in Hand Spendenlauf Suttgart',
+          shortDescription: 'Middleware Server für den Hand in Hand Spendenlauf Stuttgart',
+          screenshots: [
+            {
+              src: 'projects/DataworkITSolutions/moreComingSoon.png',
+            },
+            {
+              src: 'projects/DataworkITSolutions/moreComingSoon.png',
+            },
+            {
+              src: 'projects/DataworkITSolutions/moreComingSoon.png',
+            },
+          ],
+          technologies:
+              [
+                {
+                  title: 'Java',
+                  src: 'icons/java.png'
+                },
+                {
+                  title: 'Spring Boot',
+                  src: 'icons/springBoot.png'
+                },
+                {
+                  title: 'Docker',
+                  src: 'icons/docker.png'
+                },
+                {
+                  title: 'Gitlab',
+                  src: 'icons/gitlab.png'
+                },
+                {
+                  title: 'Keycloak',
+                  src: 'icons/auth0.jpg'
+                },
+                {
+                  title: 'Azure',
+                  src: 'icons/azure.png'
+                },
+              ],
+        },
       ],
     }
   },
