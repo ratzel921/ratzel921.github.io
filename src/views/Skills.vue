@@ -81,7 +81,7 @@ export default {
         },
         {
           title: 'C++',
-          src: 'icons/c++.png'
+          src: 'icons/c.png'
         },
         {
           title: 'Python',
