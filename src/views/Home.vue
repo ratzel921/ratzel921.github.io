@@ -12,11 +12,11 @@
         <Skills></Skills>
       </v-col>
 
-      <v-col cols="12" id="projects">
+      <v-col cols="12" id="projects" class="grey lighten-3">
         <Projects></Projects>
       </v-col>
 
-      <v-col cols="12" id="contact" class="grey lighten-3"  tag="section" tile>
+      <v-col cols="12" id="contact" >
         <Contact></Contact>
       </v-col>
     </div>

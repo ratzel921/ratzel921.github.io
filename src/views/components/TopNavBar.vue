@@ -1,23 +1,23 @@
 <template>
-  <v-app-bar app dark color="#292929" height="50" :class="getTheme">
+  <v-app-bar app height="50" :class="getTheme">
     <v-spacer></v-spacer>
-    <v-btn text to="/" @click="$vuetify.goTo('#about-me')">
+    <v-btn class="navHover" text to="/" @click="$vuetify.goTo('#about-me')">
       <v-icon>mdi-home</v-icon>
     </v-btn>
     <div v-if="$route.path === '/' && showNavContent">
-      <v-btn text @click="$vuetify.goTo('#about-me')">
+      <v-btn class="navHover" text @click="$vuetify.goTo('#about-me')">
         {{ navigation.about }}
       </v-btn>
-      <v-btn text @click="$vuetify.goTo('#career')">
+      <v-btn class="navHover" text @click="$vuetify.goTo('#career')">
         {{ navigation.career }}
       </v-btn>
-      <v-btn text @click="$vuetify.goTo('#skills')">
+      <v-btn class="navHover" text @click="$vuetify.goTo('#skills')">
         {{ navigation.skills }}
       </v-btn>
-      <v-btn text @click="$vuetify.goTo('#projects')">
+      <v-btn class="navHover" text @click="$vuetify.goTo('#projects')">
         {{ navigation.projects }}
       </v-btn>
-      <v-btn text @click="$vuetify.goTo('#contact')">
+      <v-btn class="navHover" text @click="$vuetify.goTo('#contact')">
         {{ navigation.contact }}
       </v-btn>
     </div>

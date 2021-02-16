@@ -42,46 +42,46 @@
   button {
     .v-btn__content {
       span {
-        color: #ffffff !important;
+        color: $primary-text !important;
       }
     }
   }
   .v-btn {
     .v-btn__content {
       span {
-        color: #ffffff !important;
+        color: $primary-text !important;
       }
-      color: #ffffff !important;
+      color: $primary-text !important;
     }
   }
   .v-btn::before{
     //background-color: $accept-color;
     //opacity: 10%;
   }
+  textfields
+  .v-text-field {
+    input {
+      color: $primary-text !important;
+      caret-color: $primary-text !important;
+      background-color: transparent !important;
+    }
+    label {
+      color: $primary-text !important;
+    }
+    .v-input__control {
+      .v-input__slot:before {
+        background-color: $primary-text !important;
+        //border-color: $accept-color !important;
+      }
+      .v-input__slot:after {
+        color: $accept-color !important;
+      }
+    }
+    textarea {
+      color: $primary-text !important;
+    }
+  }
 
-  //textfields
-  //.v-text-field {
-  //  input {
-  //    color: $primary-text !important;
-  //    caret-color: $primary-text !important;
-  //    background-color: transparent !important;
-  //  }
-  //  label {
-  //    color: $primary-text !important;
-  //  }
-  //  .v-input__control {
-  //    .v-input__slot:before {
-  //      background-color: $primary-text !important;
-  //      //border-color: $accept-color !important;
-  //    }
-  //    .v-input__slot:after {
-  //      color: $accept-color !important;
-  //    }
-  //  }
-  //  textarea {
-  //    color: $primary-text !important;
-  //  }
-  //}
 
   .v-input.v-input--is-focused{
     .v-input__prepend-outer{
@@ -137,12 +137,6 @@
   .v-main {
     color: $primary-text;
     background-color: $primary-color;
-  }
-
-  .v-navigation-drawer {
-    color: $primary-text;
-    background-color: $primary-color;
-    margin-top: 55px;
   }
 
   .v-icon {
