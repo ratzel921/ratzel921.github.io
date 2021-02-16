@@ -60,7 +60,7 @@ export default new Vuetify({
     },
   },
   icons: {
-    iconfont: 'fa' || 'mdi' || 'md' || 'fa4' || 'faSvg' || 'fas',
+    iconfont: 'mdi' || 'fa' || 'md' || 'fa4' || 'faSvg' || 'fas',
   },
   lang: {
     t: (key, ...params) => i18n.t(key, params)

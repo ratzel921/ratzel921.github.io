@@ -31,7 +31,6 @@
                     :key="i"
                     :src="require(`@/assets/${item.src}`)"
                     :alt="item.title"
-                    append
                 >
                 </v-carousel-item>
               </v-carousel>
