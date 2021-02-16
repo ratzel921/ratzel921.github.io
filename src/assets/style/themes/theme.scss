@@ -18,15 +18,7 @@
   // Vuetify default colors
   $vuetify-blue: map-get($theme, 'vuetify-blue');
 
-  // $accept-color: #1e88e5;
   $cancel-color: #757575;
-  $success-color: #4caf50;
-  $warning-color: #f44336;
-  $important-color: #fdd835;
-  $white-color: #030303;
-  //color: $main-text;
-  //background-color: $main-color;
-
 
 
   * {
@@ -67,48 +59,29 @@
     //opacity: 10%;
   }
 
-  //Dropdowns
-  .v-menu__content {
-    .v-list {
-      background-color: $dragg-color;
-      :hover {
-        background-color: $hover-color !important;
-        cursor: pointer;
-      }
-
-      .v-list-item__title {
-        color: $primary-text;
-        // :hover {
-        //   color: $hover-color !important;
-        //   cursor: pointer;
-        // }
-      }
-    }
-  }
-
   //textfields
-  .v-text-field {
-    input {
-      color: $primary-text !important;
-      caret-color: $primary-text !important;
-      background-color: transparent !important;
-    }
-    label {
-      color: $primary-text !important;
-    }
-    .v-input__control {
-      .v-input__slot:before {
-        background-color: $primary-text !important;
-        //border-color: $accept-color !important;
-      }
-      .v-input__slot:after {
-        color: $accept-color !important;
-      }
-    }
-    textarea {
-      color: $primary-text !important;
-    }
-  }
+  //.v-text-field {
+  //  input {
+  //    color: $primary-text !important;
+  //    caret-color: $primary-text !important;
+  //    background-color: transparent !important;
+  //  }
+  //  label {
+  //    color: $primary-text !important;
+  //  }
+  //  .v-input__control {
+  //    .v-input__slot:before {
+  //      background-color: $primary-text !important;
+  //      //border-color: $accept-color !important;
+  //    }
+  //    .v-input__slot:after {
+  //      color: $accept-color !important;
+  //    }
+  //  }
+  //  textarea {
+  //    color: $primary-text !important;
+  //  }
+  //}
 
   .v-input.v-input--is-focused{
     .v-input__prepend-outer{
@@ -162,8 +135,8 @@
   }
 
   .v-main {
-    color: $main-text;
-    background-color: $main-color;
+    color: $primary-text;
+    background-color: $primary-color;
   }
 
   .v-navigation-drawer {
@@ -183,6 +156,9 @@
   }
 
   h1 {
+    color: $main-text;
+  }
+  h2 {
     color: $main-text;
   }
   h5 {

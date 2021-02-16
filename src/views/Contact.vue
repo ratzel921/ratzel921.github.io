@@ -1,7 +1,6 @@
 <template>
-  <div>
     <v-container>
-      <h2 class="display-2 font-weight-bold py-3  text-center">{{navigation.contact}}</h2>
+      <h2 class="display-1 font-weight-bold py-3 text-center">{{navigation.contact}}</h2>
 
       <v-responsive class="mx-auto mb-12" width="56">
         <v-divider class="mb-1"></v-divider>
@@ -70,10 +69,7 @@
           </v-theme-provider>
         </form>
       </ValidationObserver>
-
-
     </v-container>
-  </div>
 </template>
 
 <script>

@@ -1,14 +1,14 @@
 <template>
     <div>
-      <v-col cols="12" id="about-me"  class="grey lighten-3">
+      <v-col cols="12" id="about-me" class="grey lighten-3" >
         <About></About>
       </v-col>
 
-      <v-col cols="12" id="career" class="grey lighten-3">
+      <v-col cols="12" id="career" >
         <Career></Career>
       </v-col>
 
-      <v-col cols="12" id="skills" class="grey lighten-3">
+      <v-col cols="12" id="skills" >
         <Skills></Skills>
       </v-col>
 

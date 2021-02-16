@@ -1,7 +1,6 @@
 <template>
-  <div>
     <v-container class="text-center">
-      <h2 class="display-2 font-weight-bold py-3  text-center">{{navigation.projects}}</h2>
+      <h2 class="display-1 font-weight-bold py-3 text-center">{{navigation.projects}}</h2>
 
       <v-row justify="center" >
         <v-col cols="12" xl="6" v-for="(project, i) in projects"
@@ -26,7 +25,7 @@
 
           <v-row class="text-center" align="center" justify="center">
             <v-col cols="12" align="center">
-              <v-carousel :show-arrows-on-hover="true" hide-delimiter-background hide-delimiters>
+              <v-carousel height="400px" :show-arrows-on-hover="true" hide-delimiter-background hide-delimiters>
                 <v-carousel-item
                     v-for="(item,i) in project.screenshots"
                     :key="i"
@@ -59,7 +58,6 @@
         </v-col>
       </v-row>
     </v-container>
-  </div>
 </template>
 
 <script>

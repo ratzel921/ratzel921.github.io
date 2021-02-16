@@ -1,6 +1,6 @@
 <template>
-  <v-footer class="justify-center" color="#292929" height="50">
-    <div class="title font-weight-light grey--text text--lighten-1 text-center">
+  <v-footer class="justify-center" height="50">
+    <div class="title text--lighten-1 text-center">
       &copy; {{ (new Date()).getFullYear() }} {{navigation.footer}}
     </div>
   </v-footer>
