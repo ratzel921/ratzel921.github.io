@@ -28,7 +28,7 @@
 
         <v-row>
           <v-col align="center" v-for="item in links" :key="item.name">
-            <v-btn icon text :href="item.link">
+            <v-btn class="navHover" icon text :href="item.link">
               <v-icon>{{item.icon}}</v-icon>
             </v-btn>
           </v-col>
