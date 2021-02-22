@@ -143,6 +143,10 @@ export default {
           title: 'Stripe',
           src: 'icons/stripe.png'
         },
+        {
+          title: 'Swagger',
+          src: 'icons/swagger.png'
+        },
       ],
         }
     },
