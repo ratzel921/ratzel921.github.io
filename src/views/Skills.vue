@@ -139,6 +139,10 @@ export default {
           title: 'Raspberry PI',
           src: 'icons/raspberryPI.png'
         },
+        {
+          title: 'Stripe',
+          src: 'icons/stripe.png'
+        },
       ],
         }
     },

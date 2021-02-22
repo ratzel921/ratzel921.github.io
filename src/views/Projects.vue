@@ -196,10 +196,10 @@ export default {
                   title: 'Docker',
                   src: 'icons/docker.png'
                 },
-                {
-                  title: 'Kubernetes',
-                  src: 'icons/kubernetes.png'
-                },
+                // {
+                //   title: 'Kubernetes',
+                //   src: 'icons/kubernetes.png'
+                // },
                 {
                   title: 'Gitlab',
                   src: 'icons/gitlab.png'
@@ -215,6 +215,10 @@ export default {
                 {
                   title: 'Redis',
                   src: 'icons/redis.png'
+                },
+                {
+                  title: 'Stripe',
+                  src: 'icons/stripe.png'
                 },
 
               ],
