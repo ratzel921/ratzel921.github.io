@@ -43,6 +43,7 @@ const messages = {
       bachelor: "Bachelor Studium im Fachbereich Medieninformatik an der Hochschule der Medien in Stuttgart",
       fraunhofer1: "Werkstudent im Bereich Entwicklung von Diensten für Cloud-Plattformen bei Fraunhofer-Institut für Produktionstechnik und Automatisierung IPA in Stuttgart",
       novatec: "Praktikant im Praxissemester im Bereich Digital Innovation bei Novatec Consulting GmbH in Leinfelden-Echterdingen",
+      novatec2: "Werkstudent im Bereich Digital Innovation bei Novatec Consulting GmbH in Leinfelden-Echterdingen",
       startup: "Gründung des Startup Hyphen Technologies mit 3 Partnern",
     },
     careerHeadlines: {
@@ -55,6 +56,7 @@ const messages = {
       bachelor: "Bachelor Studium",
       fraunhofer1: "Werkstudent bei Fraunhofer-Institut",
       novatec: "Praktikant bei Novatec Consulting GmbH",
+      novatec2: "Werkstudent bei Novatec Consulting GmbH",
       startup: "Gründung Startup",
     },
     buttons: {
@@ -113,6 +115,7 @@ const messages = {
       bachelor: "Bachelor's degree in media informatics at the Stuttgart Media University",
       fraunhofer1: "Working student in the area of developing services for cloud platforms at the Fraunhofer Institute for Manufacturing Engineering and Automation IPA in Stuttgart",
       novatec: "Internship in the practical semester in the field of digital innovation at Novatec Consulting GmbH in Leinfelden-Echterdingen",
+      novatec2: "Working student in the practical semester in the field of digital innovation at Novatec Consulting GmbH in Leinfelden-Echterdingen",
       startup: "Founding of the startup Hyphen Technologies with 3 partners",
     },
     careerHeadlines: {
@@ -125,6 +128,7 @@ const messages = {
       bachelor: "Bachelor study",
       fraunhofer1: "Working student at Fraunhofer Institute\n",
       novatec: "Trainee at Novatec Consulting GmbH\n",
+      novatec2: "Working student at Novatec Consulting GmbH\n",
       startup: "Founding of the startup",
     },
     buttons: {
@@ -143,7 +147,7 @@ const messages = {
     projectsText: {
       gameHall: "Casino WebApp with user management",
       startup: "Startup Hyphen Technologies",
-      webShop: "Webshop WebApp with user management",
+      webShop: "WebShop WebApp with user management",
       deviceManagement: "Device and service management application WebApp created at Fraunhofer",
       parkingSystem: "IoT and Cloud Service project for a parking guidance system",
       hinH: "Middleware Server for the Hand in Hand Spendenlauf Stuttgart created at Novatec",

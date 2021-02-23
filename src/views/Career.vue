@@ -128,9 +128,9 @@ export default {
         },
         {
           icon: 'mdi-code-braces',
-          title: this.careerHeadlinesTranslation.fraunhofer1,
+          title: this.careerHeadlinesTranslation.novatec2,
           date: '03/2021 - 09/2021',
-          text: this.careerTranslation.fraunhofer1,
+          text: this.careerTranslation.novatec2,
         },
       ]
     }
