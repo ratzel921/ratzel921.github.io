@@ -32,7 +32,6 @@
               <v-icon>{{item.icon}}</v-icon>
             </v-btn>
           </v-col>
-
         </v-row>
       </v-card>
     </v-row>

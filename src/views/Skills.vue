@@ -52,6 +52,14 @@ export default {
           src: 'icons/vuejs.png'
         },
         {
+          title: 'Angular',
+          src: 'icons/angular.png'
+        },
+        {
+          title: 'React',
+          src: 'icons/react.png'
+        },
+        {
           title: 'Jest',
           src: 'icons/jest.png'
         },
@@ -146,6 +154,10 @@ export default {
         {
           title: 'Swagger',
           src: 'icons/swagger.png'
+        },
+        {
+          title: 'Nginx',
+          src: 'icons/nginx.png'
         },
       ],
         }

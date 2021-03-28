@@ -116,21 +116,25 @@ export default {
           ],
           technologies:
               [
-                {
-                  title: 'HTML',
-                  src: 'icons/html.png'
-                },
-                {
-                  title: 'CSS',
-                  src: 'icons/css.png'
-                },
-                {
-                  title: 'JavaScript',
-                  src: 'icons/js.png'
-                },
+                // {
+                //   title: 'HTML',
+                //   src: 'icons/html.png'
+                // },
+                // {
+                //   title: 'CSS',
+                //   src: 'icons/css.png'
+                // },
+                // {
+                //   title: 'JavaScript',
+                //   src: 'icons/js.png'
+                // },
                 {
                   title: 'VueJs',
                   src: 'icons/vuejs.png'
+                },
+                {
+                  title: 'Nginx',
+                  src: 'icons/nginx.png'
                 },
                 {
                   title: 'Java',
@@ -169,20 +173,12 @@ export default {
           technologies:
               [
                 {
-                  title: 'HTML',
-                  src: 'icons/html.png'
-                },
-                {
-                  title: 'CSS',
-                  src: 'icons/css.png'
-                },
-                {
-                  title: 'JavaScript',
-                  src: 'icons/js.png'
-                },
-                {
                   title: 'VueJs',
                   src: 'icons/vuejs.png'
+                },
+                {
+                  title: 'Nginx',
+                  src: 'icons/nginx.png'
                 },
                 {
                   title: 'Java',
@@ -196,10 +192,10 @@ export default {
                   title: 'Docker',
                   src: 'icons/docker.png'
                 },
-                // {
-                //   title: 'Kubernetes',
-                //   src: 'icons/kubernetes.png'
-                // },
+                {
+                  title: 'Kubernetes',
+                  src: 'icons/kubernetes.png'
+                },
                 {
                   title: 'Gitlab',
                   src: 'icons/gitlab.png'
@@ -243,21 +239,25 @@ export default {
           ],
           technologies:
               [
-                {
-                  title: 'HTML',
-                  src: 'icons/html.png'
-                },
-                {
-                  title: 'CSS',
-                  src: 'icons/css.png'
-                },
-                {
-                  title: 'JavaScript',
-                  src: 'icons/js.png'
-                },
+                // {
+                //   title: 'HTML',
+                //   src: 'icons/html.png'
+                // },
+                // {
+                //   title: 'CSS',
+                //   src: 'icons/css.png'
+                // },
+                // {
+                //   title: 'JavaScript',
+                //   src: 'icons/js.png'
+                // },
                 {
                   title: 'VueJs',
                   src: 'icons/vuejs.png'
+                },
+                {
+                  title: 'Nginx',
+                  src: 'icons/nginx.png'
                 },
                 {
                   title: 'Java',
@@ -314,21 +314,25 @@ export default {
             },
           ],
           technologies: [
-            {
-              title: 'HTML',
-              src: 'icons/html.png'
-            },
-            {
-              title: 'CSS',
-              src: 'icons/css.png'
-            },
-            {
-              title: 'JavaScript',
-              src: 'icons/js.png'
-            },
+            // {
+            //   title: 'HTML',
+            //   src: 'icons/html.png'
+            // },
+            // {
+            //   title: 'CSS',
+            //   src: 'icons/css.png'
+            // },
+            // {
+            //   title: 'JavaScript',
+            //   src: 'icons/js.png'
+            // },
             {
               title: 'VueJs',
               src: 'icons/vuejs.png'
+            },
+            {
+              title: 'Nginx',
+              src: 'icons/nginx.png'
             },
             {
               title: 'Java',
@@ -378,6 +382,10 @@ export default {
                   src: 'icons/docker.png'
                 },
                 {
+                  title: 'Nginx',
+                  src: 'icons/nginx.png'
+                },
+                {
                   title: 'Gitlab',
                   src: 'icons/gitlab.png'
                 },
@@ -416,6 +424,14 @@ export default {
           ],
           technologies:
               [
+                {
+                  title: 'VueJs',
+                  src: 'icons/vuejs.png'
+                },
+                {
+                  title: 'Nginx',
+                  src: 'icons/nginx.png'
+                },
                 {
                   title: 'Java',
                   src: 'icons/java.png'
