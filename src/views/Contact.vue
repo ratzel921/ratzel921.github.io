@@ -16,7 +16,6 @@
                 <ValidationProvider name="Name" rules="required|alpha|min:5|max:20" v-slot="{ errors }">
                   <v-text-field
                             v-model="form.name"
-                            counter="20"
                             required
                             dense
                             clearable
@@ -35,7 +34,6 @@
                 <ValidationProvider name="Subject" rules="required|alpha|min:5|max:20" v-slot="{ errors }">
                   <v-text-field
                             v-model="form.subject"
-                            counter="20"
                             required
                             dense
                             clearable
