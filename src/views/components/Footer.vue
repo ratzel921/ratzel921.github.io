@@ -1,7 +1,7 @@
 <template>
   <v-footer class="justify-center" height="50">
     <div class="title text--lighten-1 text-center">
-      &copy; {{ (new Date()).getFullYear() }} {{navigation.footer}}
+      &copy; 2020 {{navigation.footer}}
     </div>
   </v-footer>
 </template>
