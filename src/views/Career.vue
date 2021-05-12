@@ -66,24 +66,24 @@ export default {
     },
     careers() {
       return [
-        {
-          icon: 'mdi-school',
-          title: this.careerHeadlinesTranslation.realschule,
-          date: '2005 - 2012',
-          text: this.careerTranslation.realschule,
-        },
-        {
-          icon: 'mdi-school',
-          title: this.careerHeadlinesTranslation.imtech,
-          date: '09/2012 - 10/2015',
-          text: this.careerTranslation.imtech,
-        },
-        {
-          icon: 'mdi-school',
-          title: this.careerHeadlinesTranslation.brenner1,
-          date: '10/2015 - 02/2016',
-          text: this.careerTranslation.brenner1,
-        },
+        // {
+        //   icon: 'mdi-school',
+        //   title: this.careerHeadlinesTranslation.realschule,
+        //   date: '2005 - 2012',
+        //   text: this.careerTranslation.realschule,
+        // },
+        // {
+        //   icon: 'mdi-school',
+        //   title: this.careerHeadlinesTranslation.imtech,
+        //   date: '09/2012 - 10/2015',
+        //   text: this.careerTranslation.imtech,
+        // },
+        // {
+        //   icon: 'mdi-school',
+        //   title: this.careerHeadlinesTranslation.brenner1,
+        //   date: '10/2015 - 02/2016',
+        //   text: this.careerTranslation.brenner1,
+        // },
         {
           icon: 'mdi-wrench-outline',
           title: this.careerHeadlinesTranslation.brenner2,
@@ -96,12 +96,12 @@ export default {
           date: '09/2017 - 07/2018',
           text: this.careerTranslation.fhs,
         },
-        {
-          icon: 'mdi-wrench-outline',
-          title: this.careerHeadlinesTranslation.damiler,
-          date: '07/2018 - 09/2018',
-          text: this.careerTranslation.damiler,
-        },
+        // {
+        //   icon: 'mdi-wrench-outline',
+        //   title: this.careerHeadlinesTranslation.damiler,
+        //   date: '07/2018 - 09/2018',
+        //   text: this.careerTranslation.damiler,
+        // },
         {
           icon: 'mdi-school-outline',
           title: this.careerHeadlinesTranslation.bachelor,
@@ -132,7 +132,7 @@ export default {
           date: '03/2021 - 09/2021',
           text: this.careerTranslation.novatec2,
         },
-      ]
+      ].reverse()
     }
   }
 }
