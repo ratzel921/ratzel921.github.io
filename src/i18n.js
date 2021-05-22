@@ -44,7 +44,7 @@ const messages = {
       fraunhofer1: "Werkstudent im Bereich Entwicklung von Diensten für Cloud-Plattformen bei Fraunhofer-Institut für Produktionstechnik und Automatisierung IPA in Stuttgart",
       novatec: "Praktikant im Praxissemester im Bereich Digital Innovation bei Novatec Consulting GmbH in Leinfelden-Echterdingen",
       novatec2: "Werkstudent im Bereich Digital Innovation bei Novatec Consulting GmbH in Leinfelden-Echterdingen",
-      startup: "Gründung des Startup Hyphen Technologies mit 3 Partnern",
+      startup: "Gründung des Startup Hyphen Tec mit 3 Partnern",
     },
     careerHeadlines: {
       realschule: "Realschulabschluss",
@@ -65,7 +65,7 @@ const messages = {
     },
     projectHeadlines: {
       gameHall: "Online Spielehalle",
-      startup: "Hyphen Technologies",
+      startup: "Hyphen Tec",
       webShop: "Online Shop",
       deviceManagement: "Geräte- und Serviceverwaltung",
       parkingSystem: "Parkleitsystem",
@@ -74,7 +74,7 @@ const messages = {
     },
     projectsText: {
       gameHall: "Casino WebApp mit Benutzerverwaltung",
-      startup: "Startup Hyphen Technologies",
+      startup: "Startup Hyphen Tec",
       webShop: "Webshop WebApp mit Benutzerverwaltung",
       deviceManagement: "Geräte- und Serviceverwaltungsanwendung WebApp erstellt bei Fraunhofer",
       parkingSystem: "IoT and Cloud Service Projekt für ein Parkleitsyystem",
@@ -116,7 +116,7 @@ const messages = {
       fraunhofer1: "Working student in the area of developing services for cloud platforms at the Fraunhofer Institute for Manufacturing Engineering and Automation IPA in Stuttgart",
       novatec: "Internship in the practical semester in the field of digital innovation at Novatec Consulting GmbH in Leinfelden-Echterdingen",
       novatec2: "Working student in the practical semester in the field of digital innovation at Novatec Consulting GmbH in Leinfelden-Echterdingen",
-      startup: "Founding of the startup Hyphen Technologies with 3 partners",
+      startup: "Founding of the startup Hyphen Tec with 3 partners",
     },
     careerHeadlines: {
       realschule: "High school diploma",
@@ -137,7 +137,7 @@ const messages = {
     },
     projectHeadlines: {
       gameHall: "Online game hall",
-      startup: "Hyphen Technologies",
+      startup: "Hyphen Tec",
       webShop: "WebShop",
       deviceManagement: "Device and service management",
       parkingSystem: "Parking control system",
@@ -146,7 +146,7 @@ const messages = {
     },
     projectsText: {
       gameHall: "Casino WebApp with user management",
-      startup: "Startup Hyphen Technologies",
+      startup: "Startup Hyphen Tec",
       webShop: "WebShop WebApp with user management",
       deviceManagement: "Device and service management application WebApp created at Fraunhofer",
       parkingSystem: "IoT and Cloud Service project for a parking guidance system",
