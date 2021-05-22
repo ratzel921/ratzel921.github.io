@@ -159,6 +159,10 @@ export default {
           title: 'Nginx',
           src: 'icons/nginx.png'
         },
+        {
+          title: 'Sequelize',
+          src: 'icons/sequelize.png'
+        },
       ],
         }
     },
