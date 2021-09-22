@@ -129,8 +129,14 @@ export default {
         {
           icon: 'mdi-code-braces',
           title: this.careerHeadlinesTranslation.novatec2,
-          date: '03/2021 - 09/2021',
+          date: '03/2021 - 12/2021',
           text: this.careerTranslation.novatec2,
+        },
+        {
+          icon: 'mdi-code-braces',
+          title: this.careerHeadlinesTranslation.novatecBachelor,
+          date: '12/2021 - 02/2022',
+          text: this.careerTranslation.novatecBachelor,
         },
       ].reverse()
     }

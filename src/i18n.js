@@ -44,6 +44,7 @@ const messages = {
       fraunhofer1: "Werkstudent im Bereich Entwicklung von Diensten für Cloud-Plattformen bei Fraunhofer-Institut für Produktionstechnik und Automatisierung IPA in Stuttgart",
       novatec: "Praktikant im Praxissemester im Bereich Digital Innovation bei Novatec Consulting GmbH in Leinfelden-Echterdingen",
       novatec2: "Werkstudent im Bereich Digital Innovation bei Novatec Consulting GmbH in Leinfelden-Echterdingen",
+      novatecBachelor: "Bachelorarbeit im Bereich Technical Consulting bei Novatec Consulting GmbH in Leinfelden-Echterdingen",
       startup: "Gründung des Startup LineTrack mit 3 Partnern",
     },
     careerHeadlines: {
@@ -57,6 +58,7 @@ const messages = {
       fraunhofer1: "Werkstudent bei Fraunhofer-Institut",
       novatec: "Praktikant bei Novatec Consulting GmbH",
       novatec2: "Werkstudent bei Novatec Consulting GmbH",
+      novatecBachelor: "Bachelorarbeit bei Novatec Consulting GmbH",
       startup: "Gründung Startup",
     },
     buttons: {
@@ -116,6 +118,7 @@ const messages = {
       fraunhofer1: "Working student in the area of developing services for cloud platforms at the Fraunhofer Institute for Manufacturing Engineering and Automation IPA in Stuttgart",
       novatec: "Internship in the practical semester in the field of digital innovation at Novatec Consulting GmbH in Leinfelden-Echterdingen",
       novatec2: "Working student in the practical semester in the field of digital innovation at Novatec Consulting GmbH in Leinfelden-Echterdingen",
+      novatecBachelor: "Bachelor in the field of technical consulting at Novatec Consulting GmbH in Leinfelden-Echterdingen",
       startup: "Founding of the startup LineTrack GmbH with 3 partners",
     },
     careerHeadlines: {
@@ -126,9 +129,10 @@ const messages = {
       fhs: "Advanced technical college",
       damiler: "Vacation employment at Daimler AG",
       bachelor: "Bachelor study",
-      fraunhofer1: "Working student at Fraunhofer Institute\n",
-      novatec: "Trainee at Novatec Consulting GmbH\n",
-      novatec2: "Working student at Novatec Consulting GmbH\n",
+      fraunhofer1: "Working student at Fraunhofer Institute",
+      novatec: "Trainee at Novatec Consulting GmbH",
+      novatec2: "Working student at Novatec Consulting GmbH",
+      novatecBachelor: "Bachelor at Novatec Consulting GmbH",
       startup: "Founding of the startup",
     },
     buttons: {
