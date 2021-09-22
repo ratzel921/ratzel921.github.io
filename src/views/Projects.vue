@@ -2,9 +2,9 @@
     <v-container class="text-center">
       <h2 class="display-1 font-weight-bold py-3 text-center">{{navigation.projects}}</h2>
 
-      <v-row justify="center" >
-        <v-col cols="12" xl="6" v-for="(project, i) in projects"
-          :key="i" >
+      <v-row justify="center" v-for="(project, i) in projects">
+        <v-col cols="2"></v-col>
+        <v-col cols="8" :key="i" >
 
           <v-card flat>
             <v-row align="center" justify="center">
@@ -25,15 +25,9 @@
 
           <v-row class="text-center" align="center" justify="center">
             <v-col cols="12" align="center">
-              <v-carousel height="400px" :show-arrows-on-hover="true" hide-delimiter-background hide-delimiters>
-                <v-carousel-item
-                    v-for="(item,i) in project.screenshots"
-                    :key="i"
-                    :src="require(`@/assets/${item.src}`)"
-                    :alt="item.title"
-                >
-                </v-carousel-item>
-              </v-carousel>
+              <v-card>
+                <v-img :src="require(`@/assets/${project.screenshots[0].src}`)"></v-img>
+              </v-card>
             </v-col>
           </v-row>
 
@@ -47,7 +41,10 @@
 
           <v-row  justify="center">
             <v-col cols="4" align="center">
-              <v-btn class="ml-n4 grey white--text"  text :to="project.site">
+              <v-btn v-if="project.site === 'https://linetrack.de'" class="ml-n4 grey white--text"  text :href="project.site">
+                {{ buttons.reading }}
+              </v-btn>
+              <v-btn v-else class="ml-n4 grey white--text"  text :to="project.site">
                 {{ buttons.reading }}
               </v-btn>
             </v-col>
@@ -55,6 +52,7 @@
           </v-card>
           <hr>
         </v-col>
+        <v-col cols="2"></v-col>
       </v-row>
     </v-container>
 </template>
@@ -93,6 +91,65 @@ export default {
 
     projects() {
       return [
+        {
+          site: 'https://linetrack.de',
+          title: this.projectHeadlines.startup,
+          shortDescription: this.projectsText.startup,
+          screenshots: [
+            {
+              src: 'projects/LineTrack/creatorBoard.png',
+            },
+          ],
+          technologies:
+              [
+                {
+                  title: 'VueJs',
+                  src: 'icons/vuejs.png'
+                },
+                {
+                  title: 'Nginx',
+                  src: 'icons/nginx.png'
+                },
+                {
+                  title: 'Java',
+                  src: 'icons/java.png'
+                },
+                {
+                  title: 'Spring Boot',
+                  src: 'icons/springBoot.png'
+                },
+                {
+                  title: 'Docker',
+                  src: 'icons/docker.png'
+                },
+                {
+                  title: 'Kubernetes',
+                  src: 'icons/kubernetes.png'
+                },
+                {
+                  title: 'Gitlab',
+                  src: 'icons/gitlab.png'
+                },
+                {
+                  title: 'AWS',
+                  src: 'icons/aws.png'
+                },
+                {
+                  title: 'Postgres',
+                  src: 'icons/postgresql.png'
+                },
+                {
+                  title: 'Redis',
+                  src: 'icons/redis.png'
+                },
+                {
+                  title: 'Stripe',
+                  src: 'icons/stripe.png'
+                },
+
+              ],
+        },
+
         {
           site: '/MiniSpielehalle',
           title: this.projectHeadlines.gameHall,
@@ -155,70 +212,7 @@ export default {
 
               ],
         },
-        {
-          site: '/HyphenTechnologies',
-          title: this.projectHeadlines.startup,
-          shortDescription: this.projectsText.startup,
-          screenshots: [
-            {
-              src: 'projects/DataworkITSolutions/moreComingSoon.png',
-            },
-            {
-              src: 'projects/DataworkITSolutions/moreComingSoon.png',
-            },
-            {
-              src: 'projects/DataworkITSolutions/moreComingSoon.png',
-            },
-          ],
-          technologies:
-              [
-                {
-                  title: 'VueJs',
-                  src: 'icons/vuejs.png'
-                },
-                {
-                  title: 'Nginx',
-                  src: 'icons/nginx.png'
-                },
-                {
-                  title: 'Java',
-                  src: 'icons/java.png'
-                },
-                {
-                  title: 'Spring Boot',
-                  src: 'icons/springBoot.png'
-                },
-                {
-                  title: 'Docker',
-                  src: 'icons/docker.png'
-                },
-                {
-                  title: 'Kubernetes',
-                  src: 'icons/kubernetes.png'
-                },
-                {
-                  title: 'Gitlab',
-                  src: 'icons/gitlab.png'
-                },
-                {
-                  title: 'AWS',
-                  src: 'icons/aws.png'
-                },
-                {
-                  title: 'Postgres',
-                  src: 'icons/postgresql.png'
-                },
-                {
-                  title: 'Redis',
-                  src: 'icons/redis.png'
-                },
-                {
-                  title: 'Stripe',
-                  src: 'icons/stripe.png'
-                },
 
-              ],
-        },
         {
           site: '/WebShop',
           title: this.projectHeadlines.webShop,
@@ -413,13 +407,7 @@ export default {
           shortDescription: this.projectsText.hinH,
           screenshots: [
             {
-              src: 'projects/DataworkITSolutions/moreComingSoon.png',
-            },
-            {
-              src: 'projects/DataworkITSolutions/moreComingSoon.png',
-            },
-            {
-              src: 'projects/DataworkITSolutions/moreComingSoon.png',
+              src: 'projects/HandinHandSpendenlauf/HandinHandSpendenlauf.jpg',
             },
           ],
           technologies:
@@ -464,13 +452,10 @@ export default {
           shortDescription: this.projectsText.beGuided,
           screenshots: [
             {
-              src: 'projects/DataworkITSolutions/moreComingSoon.png',
+              src: 'projects/BeGuided/BeGuided_Tourenliste.png',
             },
             {
-              src: 'projects/DataworkITSolutions/moreComingSoon.png',
-            },
-            {
-              src: 'projects/DataworkITSolutions/moreComingSoon.png',
+              src: 'projects/BeGuided/BeGuidedRoute.png',
             },
           ],
           technologies:
