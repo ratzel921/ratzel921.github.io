@@ -105,7 +105,7 @@ export default {
         {
           icon: 'mdi-school-outline',
           title: this.careerHeadlinesTranslation.bachelor,
-          date: '09/2018',
+          date: '09/2018 - 02/2022',
           text: this.careerTranslation.bachelor,
         },
         {
@@ -131,6 +131,12 @@ export default {
           title: this.careerHeadlinesTranslation.novatec2,
           date: '03/2021 - 12/2021',
           text: this.careerTranslation.novatec2,
+        },
+        {
+          icon: 'mdi-rocket',
+          title: this.careerHeadlinesTranslation.startup2,
+          date: '06/2021',
+          text: this.careerTranslation.startup2,
         },
         {
           icon: 'mdi-code-braces',

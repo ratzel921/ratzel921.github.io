@@ -46,6 +46,7 @@ const messages = {
       novatec2: "Werkstudent im Bereich Digital Innovation bei Novatec Consulting GmbH in Leinfelden-Echterdingen",
       novatecBachelor: "Bachelorarbeit im Bereich Technical Consulting bei Novatec Consulting GmbH in Leinfelden-Echterdingen",
       startup: "Gründung des Startup LineTrack mit 3 Partnern",
+      startup2: "Gründung des Startup Designmyhouse mit 2 Partnern",
     },
     careerHeadlines: {
       realschule: "Realschulabschluss",
@@ -59,7 +60,8 @@ const messages = {
       novatec: "Praktikant bei Novatec Consulting GmbH",
       novatec2: "Werkstudent bei Novatec Consulting GmbH",
       novatecBachelor: "Bachelorarbeit bei Novatec Consulting GmbH",
-      startup: "Gründung Startup",
+      startup: "Gründung Startup LineTrack",
+      startup2: "Gründung Startup Designmyhouse",
     },
     buttons: {
       reading: "Weiterlesen",
@@ -68,6 +70,7 @@ const messages = {
     projectHeadlines: {
       gameHall: "Online Spielehalle",
       startup: "LineTrack GmbH",
+      startup2: "Designmyhouse UG",
       webShop: "Online Shop",
       deviceManagement: "Geräte- und Serviceverwaltung",
       parkingSystem: "Parkleitsystem",
@@ -77,6 +80,7 @@ const messages = {
     projectsText: {
       gameHall: "Casino WebApp mit Benutzerverwaltung",
       startup: "Startup LineTrack",
+      startup2: "Startup Designmyhouse",
       webShop: "Webshop WebApp mit Benutzerverwaltung",
       deviceManagement: "Geräte- und Serviceverwaltungsanwendung WebApp erstellt bei Fraunhofer",
       parkingSystem: "IoT and Cloud Service Projekt für ein Parkleitsyystem",
@@ -119,7 +123,8 @@ const messages = {
       novatec: "Internship in the practical semester in the field of digital innovation at Novatec Consulting GmbH in Leinfelden-Echterdingen",
       novatec2: "Working student in the practical semester in the field of digital innovation at Novatec Consulting GmbH in Leinfelden-Echterdingen",
       novatecBachelor: "Bachelor in the field of technical consulting at Novatec Consulting GmbH in Leinfelden-Echterdingen",
-      startup: "Founding of the startup LineTrack GmbH with 3 partners",
+      startup: "Founding of the startup LineTrack with 3 partners",
+      startup2: "Founding of the startup Designmyhouse with 2 partners",
     },
     careerHeadlines: {
       realschule: "High school diploma",
@@ -133,7 +138,8 @@ const messages = {
       novatec: "Trainee at Novatec Consulting GmbH",
       novatec2: "Working student at Novatec Consulting GmbH",
       novatecBachelor: "Bachelor at Novatec Consulting GmbH",
-      startup: "Founding of the startup",
+      startup: "Founding of the startup LineTrack",
+      startup2: "Founding of the startup Designmyhouse",
     },
     buttons: {
       reading: "Continue Reading",
@@ -142,6 +148,7 @@ const messages = {
     projectHeadlines: {
       gameHall: "Online game hall",
       startup: "LineTrack GmbH",
+      startup2: "Designmyhouse UG",
       webShop: "WebShop",
       deviceManagement: "Device and service management",
       parkingSystem: "Parking control system",
@@ -151,6 +158,7 @@ const messages = {
     projectsText: {
       gameHall: "Casino WebApp with user management",
       startup: "Startup LineTrack GmbH",
+      startup2: "Startup Designmyhouse UG",
       webShop: "WebShop WebApp with user management",
       deviceManagement: "Device and service management application WebApp created at Fraunhofer",
       parkingSystem: "IoT and Cloud Service project for a parking guidance system",
