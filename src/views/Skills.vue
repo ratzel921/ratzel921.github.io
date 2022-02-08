@@ -163,6 +163,10 @@ export default {
           title: 'Sequelize',
           src: 'icons/sequelize.png'
         },
+        {
+          title: 'Sysbox',
+          src: 'icons/sysbox.png'
+        },
       ],
         }
     },
