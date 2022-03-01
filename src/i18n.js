@@ -31,7 +31,7 @@ const messages = {
     },
     content: {
       welcome1: "Hey, ich bin Dominik.",
-      welcome2: "Ich studiere Informatik an der Hochschule der Medien in Stuttgart."
+      welcome2: "Ich habe Medieninformatik an der Hochschule der Medien in Stuttgart studiert."
     },
     career: {
       realschule: "Realschulabschluss CHR Nagold",
@@ -47,6 +47,7 @@ const messages = {
       novatecBachelor: "Bachelorarbeit im Bereich Technical Consulting bei Novatec Consulting GmbH in Leinfelden-Echterdingen",
       startup: "Gründung des Startup LineTrack mit 3 Partnern",
       startup2: "Gründung des Startup Designmyhouse mit 2 Partnern",
+      novatecConsultant: "Junior Consultant im Bereich Technical Consulting bei Novatec Consulting GmbH in Leinfelden-Echterdingen",
     },
     careerHeadlines: {
       realschule: "Realschulabschluss",
@@ -62,6 +63,7 @@ const messages = {
       novatecBachelor: "Bachelorarbeit bei Novatec Consulting GmbH",
       startup: "Gründung Startup LineTrack",
       startup2: "Gründung Startup Designmyhouse",
+      novatecConsultant: "Junior Consultant bei Novatec Consulting GmbH",
     },
     buttons: {
       reading: "Weiterlesen",
@@ -109,7 +111,7 @@ const messages = {
     },
     content: {
       welcome1: "Hey, I'm Dominik.",
-      welcome2: "I study computer science at the Stuttgart Media University."
+      welcome2: `I studied "Medieninformatik" at "Hochschule der Medien in Stuttgart"`
     },
     career: {
       realschule: "High school diploma CHR Nagold",
@@ -125,6 +127,7 @@ const messages = {
       novatecBachelor: "Bachelor in the field of technical consulting at Novatec Consulting GmbH in Leinfelden-Echterdingen",
       startup: "Founding of the startup LineTrack with 3 partners",
       startup2: "Founding of the startup Designmyhouse with 2 partners",
+      novatecConsultant: "Junior Consultant in the field of technical consulting at Novatec Consulting GmbH in Leinfelden-Echterdingen",
     },
     careerHeadlines: {
       realschule: "High school diploma",
@@ -140,6 +143,7 @@ const messages = {
       novatecBachelor: "Bachelor at Novatec Consulting GmbH",
       startup: "Founding of the startup LineTrack",
       startup2: "Founding of the startup Designmyhouse",
+      novatecConsultant: "Junior Consultant at Novatec Consulting GmbH",
     },
     buttons: {
       reading: "Continue Reading",
