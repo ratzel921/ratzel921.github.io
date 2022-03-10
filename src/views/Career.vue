@@ -147,7 +147,7 @@ export default {
         {
           icon: 'mdi-account-tie',
           title: this.careerHeadlinesTranslation.novatecConsultant,
-          date: '12/2021 - 02/2022',
+          date: '03/2022',
           text: this.careerTranslation.novatecConsultant,
         },
       ].reverse()
