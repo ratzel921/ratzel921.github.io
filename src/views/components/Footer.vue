@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="footer">
+  <v-footer class="footer" :class="$store.getter.getTheme">
     <a href="https://odepla.de">© 2023 {{navigation.footer}}</a>
     <router-link to="/imprint">{{navigation.imprint}}</router-link>
     <router-link to="/privacy">{{navigation.privacy}}</router-link>
@@ -22,11 +22,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1C58D4 !important;
 }
 
 .footer > * {
   margin: 0 10px;
-  color: white !important;
 }
 </style>
