@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="footer" :class="$store.getter.getTheme">
+  <v-footer class="footer" :class="getTheme">
     <a href="https://odepla.de">© 2023 {{navigation.footer}}</a>
     <router-link to="/imprint">{{navigation.imprint}}</router-link>
     <router-link to="/privacy">{{navigation.privacy}}</router-link>
@@ -7,9 +7,12 @@
 </template>
 
 <script>
+import {mapGetters} from "vuex";
+
 export default {
   name: "Footer",
   computed: {
+    ...mapGetters(['getTheme']),
     navigation() {
       return this.$t("navigation");
     },
