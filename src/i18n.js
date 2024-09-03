@@ -22,7 +22,9 @@ const messages = {
       Flag: "de",
     },
     navigation: {
-      footer: "Erstellt von Dominik Ratzel",
+      footer: "DR Solutions UG (haftungsbeschränkt)",
+      imprint: "Impressum",
+      privacy: "Datenschutz",
       about: "Über mich",
       skills: "IT-Kenntnisse",
       projects: "Projekte",
@@ -102,7 +104,9 @@ const messages = {
       Flag: "us",
     },
     navigation: {
-      footer: "Created by Dominik Ratzel",
+      footer: "DR Solutions UG (haftungsbeschränkt)",
+      imprint: "Imprint",
+      privacy: "Privacy",
       about: "About",
       skills: "IT-Skills",
       projects: "Projects",

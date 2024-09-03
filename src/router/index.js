@@ -39,6 +39,16 @@ const routes = [
     name: 'BeGuided',
     component: () => import('../projects/BeGuided.vue')
   },
+  {
+    path: '/imprint',
+    name: 'Imprint',
+    component: () => import('../views/FooterSites/Imprint.vue')
+  },
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: () => import('../views/FooterSites/Privacy.vue')
+  },
   // {
   //   path: '/projects',
   //   name: 'Projects',
