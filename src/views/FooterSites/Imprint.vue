@@ -14,7 +14,7 @@
           <p>
             Entry in the commercial register.<br/>
             Register court: Stuttgart<br/>
-            Registration number: HRB 790128
+            Registration number: HRB 787977
           </p>
 
           <p><strong>Represented by:</strong><br/>

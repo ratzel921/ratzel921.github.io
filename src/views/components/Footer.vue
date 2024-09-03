@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="justify-center" height="50">
+  <v-footer>
     <a href="https://odepla.de">© 2023 {{navigation.footer}}</a>
     <router-link to="/imprint">{{navigation.imprint}}</router-link>
     <router-link to="/privacy">{{navigation.privacy}}</router-link>
